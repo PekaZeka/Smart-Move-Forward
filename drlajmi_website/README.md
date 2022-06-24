@@ -1,1 +1,0 @@
-Odine, oslobodi me!
