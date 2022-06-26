@@ -1,8 +1,7 @@
-export { default as contactInfo } from "./contactInfo/ContactInfo";
-export { default as factsContainer } from "./factsContainer/FactsContainer";
-export { default as footer } from "./footer/Footer";
-export { default as getInTouch } from "./getInTouch/GetInTouch";
-export { default as header } from "./header/Header";
-export { default as map } from "./map/Map";
-export { default as popup } from "./popup/Popup";
-export { default as whatWeDo } from "./whatWeDo/WhatWeDo";
+export { default as ContactInfo } from "./contactInfo/ContactInfo";
+export { default as FactsContainer } from "./factsContainer/FactsContainer";
+export { default as Footer } from "./footer/Footer";
+export { default as GetInTouch } from "./getInTouch/GetInTouch";
+export { default as Header } from "./header/Header";
+export { default as Map } from "./map/Map";
+export { default as WhatWeDo } from "./whatWeDo/WhatWeDo";

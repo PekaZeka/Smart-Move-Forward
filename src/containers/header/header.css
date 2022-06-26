@@ -1,0 +1,41 @@
+.drlj__header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.drlj__header-topbar{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5vh;
+    padding: 0.5vh 5vh 0.5vh 0vh;
+}
+.drlj__header-topbar_lng{
+    display: flex;
+    align-items: center;
+}
+.drlj__header-topbar_logo img{
+    max-height: 8rem;
+    max-width: 8rem;
+}
+.drlj__header-topbar_lng img{
+    max-height: 1rem;
+    width: 1rem;
+}
+.drlj__header-topbar_lng a{
+    padding: 0.5rem;
+}
+.drlj__header-title{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    text-shadow: #b9eaff 0px 0px 10px;
+    position: absolute;
+    align-items: center;
+    top: 25vh;
+}
+

@@ -1,9 +1,28 @@
 import React from 'react'
+import { Slider } from '../../components'
+import { Button } from '../../components'
+import logo from '../../assets/logo.png'
+import lngIcon from '../../assets/internet.png'
 import './header.css'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div className='drlj__header'>
+      <Slider />
+      <div className='drlj__header-topbar'>
+        <div className='drlj__header-topbar_logo'>
+          <img src={logo} alt="logo"/>
+        </div>
+        <div className='drlj__header-topbar_lng'>
+          <img src={lngIcon} alt="lng-icon"/>
+          <a href='src/App.js'>Language</a>
+        </div>
+      </div>
+      <div className='drlj__header-title'>
+        <h1>Drljami Website</h1>
+        <Button/>
+      </div>
+    </div>
   )
 }
 
