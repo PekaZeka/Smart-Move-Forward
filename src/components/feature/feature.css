@@ -1,0 +1,19 @@
+.drlj__WhatWeDo-container_feature{
+    min-width: 25vh;
+    height: 60rem;
+
+    display:flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.drlj__WhatWeDo-container_feature-icon img{
+    width: 2rem;
+    height: 2rem;
+    margin: 2rem 0rem;
+}
+
+.drlj__WhatWeDo-container_feature-content h1, h3{
+    margin: 0 0 2rem 0;
+}
+
