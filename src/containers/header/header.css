@@ -32,10 +32,10 @@
 .drlj__header-title{
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #000000;
     font-size: 30px;
     font-weight: 800;
-    text-shadow: #b9eaff 0px 0px 10px;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
     position: absolute;
     align-items: center;
     top: 40vh;

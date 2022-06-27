@@ -29,7 +29,7 @@ const App = () => {
       <div>
         <Header />
       </div>
-      <div className="gradient__bg">
+      <div>
         <WhatWeDo />
         <Facts />
         <GetInTouch />

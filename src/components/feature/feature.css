@@ -1,16 +1,47 @@
 .drlj__WhatWeDo-container_feature{
-    min-width: 25vh;
-    height: 60rem;
-
+    
+    height: 25rem;
+    width: 25rem;
+    padding: 1rem 2rem ;
     display:flex;
     flex-direction: column;
     margin: 2rem;
+
 }
+
+.drlj__WhatWeDo-container_feature:hover{
+    -webkit-animation: slide-fwd-top 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-fwd-top 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    background-color: aqua;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 5%;
+}
+
+@-webkit-keyframes slide-fwd-top {
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) translateY(-15px);
+              transform: translateZ(160px) translateY(-15px);
+    }
+  }
+@keyframes slide-fwd-top {
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) translateY(-15px);
+              transform: translateZ(160px) translateY(-15px);
+    }
+  }
 
 .drlj__WhatWeDo-container_feature-icon img{
     width: 2rem;
     height: 2rem;
-    margin: 2rem 0rem;
+    margin-bottom: 1rem;
 }
 
 .drlj__WhatWeDo-container_feature-content h1, h3{
