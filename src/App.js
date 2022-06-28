@@ -25,11 +25,11 @@ import "./app.css";
 
 const App = () => {
   return (
-    <div className="gradient__bg">
+    <div >
       <div>
         <Header />
       </div>
-      <div>
+      <div className="gradient__bg">
         <WhatWeDo />
         <Facts />
         <GetInTouch />

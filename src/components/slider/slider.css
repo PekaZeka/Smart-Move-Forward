@@ -7,9 +7,6 @@
   justify-content: center;
   flex-direction: row;
   align-items: flex-end;
-  position: relative;
-  z-index: 0;
-  
 }
 @media screen and (max-width: 700px){
   .container-slider {
@@ -19,7 +16,8 @@
 .slide {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
+  z-index: -1;
   opacity: 0;
   transition: opacity ease-in-out 0.4s;
 }
@@ -39,8 +37,11 @@
   background: #999999a3;
   cursor: pointer;
   display: inline-block;
-  position: relative;
+  
 }
 .dot.active {
   background: #cfcfcfe2
+}
+.container-dots{
+  position: relative;
 }
