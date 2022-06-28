@@ -16,22 +16,11 @@
   }
   
   .gradient__bg {
-
-    /* ff 3.6+ */
-    background:-moz-radial-gradient(ellipse at 0% 0%, rgba(255, 149, 115, 0.26) 1%, rgba(198, 207, 255, 1) 100%);
-
-    /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(ellipse at 0% 0%, rgba(255, 149, 115, 0.26) 1%, rgba(198, 207, 255, 1) 100%);
-
-    /* opera 11.10+ */
-    background:-o-radial-gradient(ellipse at 0% 0%, rgba(255, 149, 115, 0.26) 1%, rgba(198, 207, 255, 1) 100%);
-
-    /* ie 10+ */
-    background:-ms-radial-gradient(ellipse at 0% 0%, rgba(255, 149, 115, 0.26) 1%, rgba(198, 207, 255, 1) 100%);
-
-    /* global 92%+ browsers support */
-    background:radial-gradient(ellipse at 0% 0%, rgba(255, 149, 115, 0.26) 1%, rgba(198, 207, 255, 1) 100%);
-
+    background: rgb(253,251,251);
+    background: -moz-radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);
+    background: radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfbfb",endColorstr="#ebedee",GradientType=1);
 }
   
   .section__padding {

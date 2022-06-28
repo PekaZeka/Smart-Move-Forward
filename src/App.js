@@ -25,7 +25,7 @@ import "./app.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="gradient__bg">
       <div>
         <Header />
       </div>
