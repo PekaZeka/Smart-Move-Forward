@@ -2,8 +2,8 @@ import React from "react";
 
 import {
   Button,
-  Facts,
-  Features,
+  Counter,
+  Feature,
   ImgSweeper,
   Socials,
   PageSweeper,
@@ -13,7 +13,7 @@ import {
 
 import {
   ContactInfo,
-  FactsContainer,
+  Facts,
   Footer,
   GetInTouch,
   Header,
@@ -25,7 +25,7 @@ import "./app.css";
 
 const App = () => {
   return (
-    <div >
+    <div>
       <div>
         <Header />
       </div>
@@ -36,55 +36,6 @@ const App = () => {
         <Map />
         <ContactInfo />
         <Footer />
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
-        <p>a</p>
       </div>
     </div>
   );

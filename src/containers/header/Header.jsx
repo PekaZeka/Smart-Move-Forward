@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className='drlj__header'>
       <Slider />
-      <div className='drlj__header-topbar'>
+      <div className='drlj__header-topbar fade-in'>
         <div className='drlj__header-topbar_logo'>
           <img src={logo} alt="logo"/>
         </div>
@@ -18,7 +18,7 @@ const Header = () => {
           <a href='src/App.js'>Language</a>
         </div>
       </div>
-      <div className='drlj__header-title'>
+      <div className='drlj__header-title fade-in'>
         <h1>Drljami Website</h1>
         <Button/>
       </div>

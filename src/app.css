@@ -1,52 +1,43 @@
-* {
-    box-sizing: border-box; /*Fits inside parent*/
+*{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
     font-family: var(--font-family);
+}  
+body{
+  background: var(--color-bg);
+}  
+a{
+  color: unset;
+  text-decoration: none;
+}  
+.gradient__bg{
+  background: rgb(253,251,251);
+  background: -moz-radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);
+  background: radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfbfb",endColorstr="#ebedee",GradientType=1);
+} 
+.section__padding{
+  padding: 4rem 6rem;
+}  
+.section__margin{
+  margin: 4rem 6rem;
+}  
+@media screen and (max-width: 700px){
+  .section__padding{
+    padding: 4rem;
   }
-  
-  body {
-    background: var(--color-bg);
+  .section__margin{
+    margin: 4rem;
   }
-  
-  a {
-    color: unset;
-    text-decoration: none;
-  }
-  
-  .gradient__bg {
-    background: rgb(253,251,251);
-    background: -moz-radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);
-    background: radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfbfb",endColorstr="#ebedee",GradientType=1);
 }
-  
-  .section__padding {
-    padding: 4rem 6rem;
+@media screen and (max-width: 550px){
+  .section__padding{
+    padding: 4rem 2rem;
   }
-  
-  .section__margin {
-    margin: 4rem 6rem;
-  }
-  
-  @media screen and (max-width: 700px) {
-    .section__padding {
-      padding: 4rem;
-    }
-  
-    .section__margin {
-      margin: 4rem;
-    }
-  }
-  
-  @media screen and (max-width: 550px) {
-    .section__padding {
-      padding: 4rem 2rem;
-    }
-  
-    .section__margin {
-      margin: 4rem 2rem;
-    }  
-  }
+  .section__margin{
+    margin: 4rem 2rem;
+  }  
+}

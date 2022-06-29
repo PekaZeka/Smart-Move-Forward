@@ -1,5 +1,5 @@
 .drlj__WhatWeDo-container_feature{
-    height: 30rem;
+    height: 25rem;
     width: 40rem;
     padding: 2rem;
     display:block;
@@ -9,8 +9,8 @@
 .drlj__WhatWeDo-container_feature:hover{
     -webkit-animation: slide-fwd-top 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: slide-fwd-top 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    background-color: rgba(49, 173, 255, 0.695);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            background:linear-gradient(135deg, #79C3FFB0 0%, #4A5FFF6B 34%, #323C78BD 100%);
+    box-shadow: #0000004d 0px 19px 38px, #00000038 0px 15px 12px;
     border-radius: 5%;
 }
 @-webkit-keyframes slide-fwd-top {

@@ -30,7 +30,7 @@ export default function Slider() {
                     </div>
                 )
             })}
-            <div className="container-dots">
+            <div className="container-dots  fade-in">
                 {Array.from({length: dataSlider.length}).map((item, index) => (
                     <div onClick={() => moveDot(index + 1)} className={slideIndex === index + 1 ? "dot active" : "dot"}>
                         
