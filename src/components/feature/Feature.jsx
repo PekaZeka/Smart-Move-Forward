@@ -12,8 +12,7 @@ const Feature = ({iconURL, title, text}) => {
           <h1>{title}</h1>
         </div>
         <div className='drlj__Feature-content'>
-          <h3>{text}</h3>
-          <p>Learn more</p>
+          <p>{text}</p>
         </div>
       </div>
     </div>  

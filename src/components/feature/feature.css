@@ -44,7 +44,11 @@
 .drlj__Feature-content{
   width: 100%;
 }
-.drlj__Feature-content h1, .drlj__Feature-content h3{
-  margin: 0 0 2rem 0;
+.drlj__Feature-header h1{
+  margin: 0 0 3rem 0;
+}
+.drlj__Feature-content p{
+  font-size: 20px;
+  color: #494949;
 }
 

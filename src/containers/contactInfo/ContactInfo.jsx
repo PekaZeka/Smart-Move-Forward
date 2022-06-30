@@ -29,7 +29,7 @@ const ContactInfo = () => {
         <div className='drlj__ContactInfo-content_mail'>
           <img src={mail} alt="mail" />
           <div>
-          <a href="mailto:SMF@info.rs">SMF@info.rs</a>
+          <a href="mailto:smf@info.rs">smf@info.rs</a>
           </div>
         </div>  
       </div>
