@@ -1,7 +1,7 @@
 import React from 'react'
 import './whatWeDo.css'
 import { Feature } from '../../components'
-import {  battery, cable, cpu_tower, gear, screw, pliers} from './imports'
+import {  battery, cable, cpu_tower, gear} from './imports'
 
 const WhatWeDo = () => {
   return (

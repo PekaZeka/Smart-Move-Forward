@@ -19,7 +19,7 @@ const Header = () => {
         </div>
       </div>
       <div className='drlj__header-title fade-in'>
-        <h1>Drljami Website</h1>
+        <h1>SMART MOVE FORWARD</h1>
         <Button/>
       </div>
     </div>

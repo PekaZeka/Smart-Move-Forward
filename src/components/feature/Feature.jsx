@@ -4,14 +4,14 @@ import './feature.css'
 const Feature = ({iconURL, title, text}) => {
   return (
     <div>
-      <div className="drlj__WhatWeDo-container_feature">
-        <div className='drlj__WhatWeDo-container_feature-header'>
-          <div className="drlj__WhatWeDo-container_feature-icon">
+      <div className="drlj__Feature">
+        <div className='drlj__Feature-header'>
+          <div className="drlj__Feature-icon">
             <img src={iconURL} alt="features_icon" />
           </div>
           <h1>{title}</h1>
         </div>
-        <div className='drlj__WhatWeDo-container_feature-content'>
+        <div className='drlj__Feature-content'>
           <h3>{text}</h3>
           <p>Learn more</p>
         </div>

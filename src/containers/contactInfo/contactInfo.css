@@ -1,0 +1,40 @@
+.drlj__ContactInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 4rem 6rem;
+}
+.drlj__ContactInfo-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.drlj__ContactInfo-content img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.drlj__ContactInfo-content h3{
+    margin-bottom: 2rem;
+    font-size: 30px;
+}
+.drlj__ContactInfo-content p, .drlj__ContactInfo-content a{
+    font-size: 20px;
+}
+.drlj__ContactInfo-content p{
+    color: #6b6b6b;
+}
+.drlj__ContactInfo-content a{
+    color: #0070f3;
+}
+.drlj__ContactInfo-content_location{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+}
+.drlj__ContactInfo-content_phone, .drlj__ContactInfo-content_mail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}

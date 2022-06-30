@@ -1,26 +1,12 @@
 import React from "react";
-
-import {
-  Button,
-  Counter,
-  Feature,
-  ImgSweeper,
-  Socials,
-  PageSweeper,
-  Popup,
-  Slider,
-} from "./components";
-
 import {
   ContactInfo,
   Facts,
   Footer,
   GetInTouch,
   Header,
-  Map,
   WhatWeDo,
 } from "./containers";
-
 import "./app.css";
 
 const App = () => {
@@ -33,7 +19,6 @@ const App = () => {
         <WhatWeDo />
         <Facts />
         <GetInTouch />
-        <Map />
         <ContactInfo />
         <Footer />
       </div>
