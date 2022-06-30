@@ -7,7 +7,7 @@
   --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
   
   --color-bg: #ffffff;
-  --color-footer : #5873FF;
+  --color-getintouch: #5873FF;
   --color-text: #C6CFFF;
   --color-subtext: #FF957342;
 }
@@ -68,8 +68,8 @@
   }
 }
 .fade-in {
-	-webkit-animation: fade-in 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	-webkit-animation: fade-in 1.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
  @-webkit-keyframes fade-in {
   0% {
@@ -87,5 +87,34 @@
     opacity: 1;
   }
 }
+.swirl-in-fwd {
+	-webkit-animation: swirl-in-fwd 0.75s ease-out both;
+	        animation: swirl-in-fwd 0.75s ease-out both;
+}
+
+@-webkit-keyframes swirl-in-fwd {
+    0% {
+        -webkit-transform: rotate(-540deg) scale(0);
+                transform: rotate(-540deg) scale(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes swirl-in-fwd {
+    0% {
+        -webkit-transform: rotate(-540deg) scale(0);
+                transform: rotate(-540deg) scale(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+} 
 
 

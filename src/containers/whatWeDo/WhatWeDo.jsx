@@ -7,7 +7,7 @@ const WhatWeDo = () => {
   return (
     <div className='drlj__WhatWeDo-container'>
       <div className='drlj__WhatWeDo-container_title slide-in-left'>
-        <p>EXCELENCE IN MACHINE BUILDING</p>
+        <p>EXCELENCE IN MACHINE MANUFACTURING</p>
         <h1>What We Do</h1>
       </div>
       <div className="drlj__WhatWeDo-container_features slide-in-bottom">

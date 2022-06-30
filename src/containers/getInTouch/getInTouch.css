@@ -1,0 +1,50 @@
+.drlj__GetInTouch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.drlj__GetInTouch img{
+    width: 12rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+.drlj__GetInTouch-logoParagraph_top {
+    font-size: 12px;
+}
+.drlj__GetInTouch-logoParagraph_bot {
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+.swirl-in-fwd {
+	-webkit-animation: swirl-in-fwd 0.75s ease-out both;
+	        animation: swirl-in-fwd 0.75s ease-out both;
+}
+
+@-webkit-keyframes swirl-in-fwd {
+    0% {
+        -webkit-transform: rotate(-540deg) scale(0);
+                transform: rotate(-540deg) scale(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes swirl-in-fwd {
+    0% {
+        -webkit-transform: rotate(-540deg) scale(0);
+                transform: rotate(-540deg) scale(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}  
