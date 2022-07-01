@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollTopBtn } from "./components";
+import { ScrollToTop } from "./components";
 import {
   ContactInfo,
   Facts,
@@ -19,11 +19,13 @@ const App = () => {
       <div className="gradient__bg">
         <WhatWeDo />
         <Facts />
+      </div>
+      <div className="solid__bg">
         <GetInTouch />
         <ContactInfo />
         <Footer />
+        <ScrollToTop />
       </div>
-      <ScrollTopBtn />
     </div>
   );
 };

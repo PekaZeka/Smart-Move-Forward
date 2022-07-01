@@ -18,6 +18,9 @@ a{
   background: -webkit-radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);
   background: radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfbfb",endColorstr="#ebedee",GradientType=1);
+}
+.solid__bg{
+  background-color: #ffffff;
 } 
 .section__padding{
   padding: 4rem 6rem;

@@ -4,4 +4,4 @@ export { default as Map } from "./map/Map";
 export { default as PageSweeper } from "./pageSweeper/PageSweeper";
 export { default as Slider } from "./slider/Slider";
 export { default as Counter } from "./counter/Counter";
-export { default as ScrollTopBtn } from "./scrollTopBtn/ScrollTopBtn";
+export { default as ScrollToTop } from "./scrollToTop/ScrollToTop";
