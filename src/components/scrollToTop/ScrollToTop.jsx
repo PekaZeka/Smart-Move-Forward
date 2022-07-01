@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { FaAngleUp } from "react-icons/fa";
 import "./scrollToTop.css";
+import arrowUp from "../../assets/arrowUp.png";
 
 const ScrollToTop = () => {
     const [showTopBtn, setShowTopBtn] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 400) {
+            if (window.scrollY > 200) {
                 setShowTopBtn(true);
             } else {
                 setShowTopBtn(false);
@@ -19,16 +19,12 @@ const ScrollToTop = () => {
             behavior: "smooth",
         });
     };
-    return (
-        <div className="top-to-btm">
-            {" "}
-            {showTopBtn && (
-                <FaAngleUp
-                    className="icon-position icon-style"
-                    onClick={goToTop}
-                />
-            )}{" "}
-        </div>
-    );
+    if (showTopBtn){
+        return (
+            <div className="icon-position puff-in-center" onClick={goToTop}>
+                <img src={arrowUp} alt="arrow up" />
+            </div>
+        );
+    }
 };
 export default ScrollToTop;

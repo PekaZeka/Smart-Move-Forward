@@ -1,40 +1,54 @@
   .icon-position{
     position: fixed;
-    bottom: 40px;
-    right: 25px;
+    bottom: 3%;
+    right: 1.5%;
     z-index: 20;
   }
-  .icon-style{
-    background-color: #551B54;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    color: #fff;
+  .icon-position img{
+    opacity: 80%;
+    height: 60px;
+    width: 60px;
     cursor: pointer;
-    animation: movebtn 3s ease-in-out infinite;
-    transition: all .5s ease-in-out;
   }
-  .icon-style:hover{
-    animation: none;
-    background: #fff;
-    color: #551B54;
-    border: 2px solid #551B54;
+  .icon-position img:hover{
+    
+    transition: ease-out;
+    transform: scale(1.2);
+    transition: transform 0.75s;
   }
-  @keyframes movebtn {
-    0%{
-      transform: translateY(0px);
-    }
-    25%{
-      transform: translateY(20px);
-    }
-    50%{
-      transform: translateY(0px);
-    }
-    75%{
-      transform: translateY(-20px);
-    }
-    100%{
-      transform: translateY(0px);
-    }
+  .puff-in-center {
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
   }
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
