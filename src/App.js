@@ -1,4 +1,5 @@
 import React from "react";
+import { ScrollTopBtn } from "./components";
 import {
   ContactInfo,
   Facts,
@@ -22,6 +23,7 @@ const App = () => {
         <ContactInfo />
         <Footer />
       </div>
+      <ScrollTopBtn />
     </div>
   );
 };
