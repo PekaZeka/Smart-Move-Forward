@@ -1,7 +1,5 @@
 import React from 'react'
-import { Slider } from '../../components'
-import { Button } from '../../components'
-import logo from '../../assets/logo.png'
+import { Slider, Button, Logo } from '../../components'
 import lngIcon from '../../assets/internet.png'
 import './header.css'
 
@@ -11,7 +9,7 @@ const Header = () => {
       <Slider />
       <div className='drlj__header-topbar fade-in'>
         <div className='drlj__header-topbar_logo'>
-          <img src={logo} alt="logo"/>
+          <Logo />
         </div>
         <div className='drlj__header-topbar_lng'>
           <img src={lngIcon} alt="lng-icon"/>

@@ -5,3 +5,5 @@ export { default as PageSweeper } from "./pageSweeper/PageSweeper";
 export { default as Slider } from "./slider/Slider";
 export { default as Counter } from "./counter/Counter";
 export { default as ScrollToTop } from "./scrollToTop/ScrollToTop";
+export { default as Logo } from "./logo/Logo";
+export { default as Time } from "./time/Time";

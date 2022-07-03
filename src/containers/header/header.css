@@ -17,9 +17,12 @@
     display: flex;
     align-items: center;
 }
+.drlj__header-topbar_logo{
+    width: 18rem;
+}
 .drlj__header-topbar_logo img{
-    max-height: 15rem;
-    max-width: 15rem;
+    height: 400px;
+    width: 200px;
 }
 .drlj__header-topbar_lng img{
     max-height: 1.4rem;

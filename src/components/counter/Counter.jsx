@@ -1,8 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import './counter.css'
-import '../../index.css'
 
-export default function Counter({number, text}) {
+function Counter({number, text}) {
     const [count, setCount] = useState(1);
     const [plus, setPlus] = useState('');
     const [show, setShow] = useState(false)
@@ -38,5 +37,7 @@ export default function Counter({number, text}) {
     </div>
   )
 }
+
+export default Counter
 
 
