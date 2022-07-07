@@ -1,26 +1,18 @@
-import React from 'react'
-import { Slider, Button, Logo } from '../../components'
-import lngIcon from '../../assets/internet.png'
+import { Slider, Button, Navbar } from '../../components'
 import './header.css'
 
 const Header = () => {
   return (
-    <div className='drlj__header'>
+    <header className='smf__header' id='Home'>
       <Slider />
-      <div className='drlj__header-topbar fade-in'>
-        <div className='drlj__header-topbar_logo'>
-          <Logo />
-        </div>
-        <div className='drlj__header-topbar_lng'>
-          <img src={lngIcon} alt="lng-icon"/>
-          <a href='src/App.js'>Language</a>
-        </div>
+      <div className='fade-in'>
+        <Navbar />
       </div>
-      <div className='drlj__header-title fade-in'>
+      <div className='smf__header-title fade-in'>
         <h1>SMART MOVE FORWARD</h1>
         <Button/>
       </div>
-    </div>
+    </header>
   )
 }
 

@@ -1,19 +1,18 @@
-import React from 'react'
 import { Counter } from "../../components";
-import './facts.css'
+import './projects.css'
 
-const Facts = () => {
+const Projects = () => {
   return (
-    <div className='drlj__facts'>
-      <div className='drlj__facts-header slide-in-left'>
+    <div className='smf__projects' id='Projects'>
+      <div className='smf__projects-header slide-in-left'>
         <h1>
-          Facts
+          Projects
         </h1>
         <p>
           Being more than a decade in business we gained trust from numerous companies - satisfied clients that choose to collaborate long-term with us on R & D projects in industrial automation & optimization and software & hardware system integration:
         </p>
       </div>
-      <div className='drlj__facts-content slide-in-bottom'>
+      <div className='smf__projects-content slide-in-bottom'>
         <Counter number={20} text='YEARS IN BUSSINES' />
         <Counter number={40} text='PROJECTS DONE' />
         <Counter number={90} text='HAPPY CLIENTS' />
@@ -22,4 +21,4 @@ const Facts = () => {
   )
 }
 
-export default Facts
+export default Projects

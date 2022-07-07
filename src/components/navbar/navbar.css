@@ -1,0 +1,39 @@
+.smf__Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 0 20rem;
+    z-index: 1000;
+}
+.smf__Navbar-Logo{
+    width: 100px;
+    padding-top: 10px;
+}
+.smf__Navbar-containers{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.smf__Navbar-containers a{
+    -webkit-transition: color 0.3s;
+            transition: color 0.3s;
+    opacity: 70%;
+}
+.smf__Navbar-containers a:hover{
+    color:#fdcd3b;
+}
+.smf__Navbar-language{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 40px;
+}
+.smf__Navbar-language img{
+    width: 30px;
+}

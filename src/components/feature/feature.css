@@ -1,4 +1,4 @@
-.drlj__Feature{
+.smf__Feature{
     height: 25rem;
     width: 40rem;
     padding: 2rem;
@@ -6,7 +6,7 @@
     flex-direction: column;
     margin: 2rem;
 }
-.drlj__Feature:hover{
+.smf__Feature:hover{
     -webkit-animation: slide-fwd-top 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: slide-fwd-top 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
@@ -33,21 +33,21 @@
               transform: translateZ(100px) translateY(-15px);
     }
   }
-.drlj__Feature-header{
+.smf__Feature-header{
   display: flex;
 }
-.drlj__Feature-icon img{
+.smf__Feature-icon img{
   width: 2.5rem;
   height: 2.5rem;
   margin: 0 1rem 1rem 0;
 }
-.drlj__Feature-content{
+.smf__Feature-content{
   width: 100%;
 }
-.drlj__Feature-header h1{
+.smf__Feature-header h1{
   margin: 0 0 3rem 0;
 }
-.drlj__Feature-content p{
+.smf__Feature-content p{
   font-size: 20px;
   color: #494949;
 }

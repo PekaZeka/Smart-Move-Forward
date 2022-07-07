@@ -1,62 +1,64 @@
 .gear1{
-    fill:#ffffff;
+    fill: #ffffff;
+    transform-box: fill-box;
+    transform-origin: center;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate-center;
+            animation-name: rotate-center;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused; 
 }
 .gear2{
     fill:#b80000;
+    transform-box: fill-box;
+    transform-origin: center;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate-center;
+            animation-name: rotate-center;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 .txt{
     fill:#b80000;
 }
 .rotate-center{
-    transform-box: fill-box;
-    transform-origin: center;
-	-webkit-animation: rotate-center 10s linear infinite both;
-	        animation: rotate-center 10s linear infinite both;
+  
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
- @-webkit-keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
-  }
-  @keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
-  }
-  .rotate-center-reverse{
-    transform-box: fill-box;
-    transform-origin: center;
-	-webkit-animation: rotate-center 7s linear infinite reverse both;
-	        animation: rotate-center 7s linear infinite reverse both;
+.rotate-center-reverse{
+  
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
- @-webkit-keyframes rotate-center-reverse {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
-  @keyframes rotate-center-reverse {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
   

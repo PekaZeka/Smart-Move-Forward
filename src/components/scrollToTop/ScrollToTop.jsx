@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./scrollToTop.css";
 import arrowUp from "../../assets/arrowUp.png";
 

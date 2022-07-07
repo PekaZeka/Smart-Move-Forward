@@ -1,9 +1,8 @@
-import React from 'react'
 import './button.css'
 
 const Button = () => {
   return (
-    <button className='btn'>Contact</button>
+      <button className='btn scale-up-center'>Contact</button>
   )
 }
 

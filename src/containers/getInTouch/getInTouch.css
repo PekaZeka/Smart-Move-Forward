@@ -1,4 +1,4 @@
-.drlj__GetInTouch{
+.smf__GetInTouch{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,15 +8,14 @@
     box-shadow: 0 10px 20px #00000033;
     margin-bottom: 2rem;
 }
-.drlj__GetInTouch img{
-    width: 12rem;
-    height: 10rem;
-    margin-bottom: 2rem;
+.smf__GetInTouch-logo{
+    width: 150px;
+    margin: 2rem 0;
 }
-.drlj__GetInTouch-logoParagraph_top {
+.smf__GetInTouch-logoParagraph_top {
     font-size: 12px;
 }
-.drlj__GetInTouch-logoParagraph_bot {
+.smf__GetInTouch-logoParagraph_bot {
     font-size: 20px;
     margin-bottom: 2rem;
 }

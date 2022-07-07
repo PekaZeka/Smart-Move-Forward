@@ -1,16 +1,15 @@
-import React from 'react'
 import './whatWeDo.css'
 import { Feature } from '../../components'
 import {  battery, cable, cpu_tower, gear} from './imports'
 
 const WhatWeDo = () => {
   return (
-    <div className='drlj__WhatWeDo-container'>
-      <div className='drlj__WhatWeDo-container_title slide-in-left'>
+    <div className='smf__WhatWeDo-container' id='WhatWeDo'>
+      <div className='smf__WhatWeDo-container_title slide-in-left'>
         <p>EXCELENCE IN MACHINE MANUFACTURING</p>
         <h1>What We Do</h1>
       </div>
-      <div className="drlj__WhatWeDo-container_features slide-in-bottom">
+      <div className="smf__WhatWeDo-container_features slide-in-bottom">
       <Feature iconURL={battery} title="Control Systems" text="We offer engineering and manufacturing of cost-effective advanced control systems for demanding processes, ranging from chemical industries to particle physics, with on-site installation and final commissioning. A wide variety of PLCs and SCADA packages are available to match your specific needs."/>
       <Feature iconURL={cable} title="Industrial Automation" text="In designing and manufacturing of high-tech electronics we specialize also in miniaturization and low-power-consumption GPS devices such as tracking devices for fleets of vehicles with applications for vehicle telematics and fleet management delivering real-time two-way M2M connectivity. Please feel free to check our solutions here."/>
       <Feature iconURL={cpu_tower} title="Machine Building" text="In designing and manufacturing of high-tech electronics we specialize also in miniaturization and low-power-consumption GPS devices such as tracking devices for fleets of vehicles with applications for vehicle telematics and fleet management delivering real-time two-way M2M connectivity. Please feel free to check our solutions here."/>

@@ -1,14 +1,13 @@
-import React from 'react'
 import { Map } from '../../components'
 import {  location, phone, mail } from './imports'
 import './contactInfo.css'
 
 const ContactInfo = () => {
   return (
-    <div className="drlj__ContactInfo">
-      <div className="drlj__ContactInfo-content">
+    <div className="smf__ContactInfo">
+      <div className="smf__ContactInfo-content">
         <h3>Contact Info</h3>
-        <div className='drlj__ContactInfo-content_location'>
+        <div className='smf__ContactInfo-content_location'>
           <img src={location} alt="location" />
           <p>
             Smart Move Forward 
@@ -20,13 +19,13 @@ const ContactInfo = () => {
             Serbia 
           </p>
         </div>
-        <div className='drlj__ContactInfo-content_phone'>
+        <div className='smf__ContactInfo-content_phone'>
           <img src={phone} alt="phone" />
           <div>
           <a href="tel:+381 21 840 247">+381 21 840 247</a>
           </div>
         </div>
-        <div className='drlj__ContactInfo-content_mail'>
+        <div className='smf__ContactInfo-content_mail'>
           <img src={mail} alt="mail" />
           <div>
           <a href="mailto:smf@info.rs">smf@info.rs</a>

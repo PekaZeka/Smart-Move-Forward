@@ -4,13 +4,13 @@
     cursor: pointer;
     border: none;
     padding: 0 56px;
-    height: 45px;
+    height: 50px;
     line-height: 45px;
     border-radius: 7px;
     background-color: #0070f3;
     color: #ffffff;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     box-shadow: 0 4px 14px 0 #0076ff63;
     transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
 }

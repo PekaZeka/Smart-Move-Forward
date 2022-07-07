@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react'
+import {useState,useEffect} from 'react'
 import './counter.css'
 
 function Counter({number, text}) {
@@ -31,7 +31,7 @@ function Counter({number, text}) {
     [count, number, plus, show]);
         
     return (
-    <div className='drlj__counter'>
+    <div className='smf__counter'>
         <p>{count}{plus}</p>
         <p>{text}</p>
     </div>

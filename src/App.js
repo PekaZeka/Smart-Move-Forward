@@ -1,8 +1,7 @@
-import React from "react";
 import { ScrollToTop } from "./components";
 import {
   ContactInfo,
-  Facts,
+  Projects,
   Footer,
   GetInTouch,
   Header,
@@ -18,7 +17,7 @@ const App = () => {
       </div>
       <div className="gradient__bg">
         <WhatWeDo />
-        <Facts />
+        <Projects />
       </div>
       <div className="solid__bg">
         <GetInTouch />
