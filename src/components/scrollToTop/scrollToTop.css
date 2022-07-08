@@ -5,13 +5,14 @@
   z-index: 20;
 }
 .icon-position img{
-  opacity: 80%;
+  background-color: #b80000b9;
+  border-radius: 50%;
+  padding: 14px;
   height: 60px;
   width: 60px;
   cursor: pointer;
 }
 .icon-position img:hover{
-  
   transition: ease-out;
   transform: scale(1.2);
   transition: transform 0.75s;

@@ -12,22 +12,20 @@
     z-index: 1000;
     opacity: 0;
 }
-.smf__Navbar-Logo{
-    width: 100px;
-    padding-top: 10px;
-}
 .smf__Navbar-containers{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 35px;
+    padding: 1rem 4rem;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 2.5px 2.5px -2px #000000;
+    text-shadow: #707070 2.5px 2.5px 2.5px;
+    color: #ffffff;
+    font-weight: 700;
 }
 .smf__Navbar-containers a{
     -webkit-transition: color 0.3s;
             transition: color 0.3s;
-    opacity: 70%;
-}
-.smf__Navbar-containers a:hover{
-    color:#fdcd3b;
 }
 .smf__Navbar-language{
     display: flex;

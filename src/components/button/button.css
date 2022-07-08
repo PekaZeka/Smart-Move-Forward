@@ -7,14 +7,14 @@
     height: 50px;
     line-height: 45px;
     border-radius: 7px;
-    background-color: #0070f3;
-    color: #ffffff;
-    font-weight: 400;
+    background-color: #ffffff;
+    color: #b80000c2;
+    font-weight: 700;
     font-size: 22px;
     box-shadow: 0 4px 14px 0 #0076ff63;
     transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
 }
 .btn:hover{
-    background: #0076ffe6;
+    background: #ffffffe6;
     box-shadow: 0 6px 20px #0076ff3b;
 }

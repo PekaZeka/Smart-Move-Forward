@@ -2,7 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+}
+.smf__header-logo{
+  width: 12rem;
+  padding-top: 10px;
+  margin: 2rem;
 }
 .smf__header-title{
     display: flex;
@@ -16,9 +21,12 @@
   }
   .smf__header-title h1{
     font-family: var(--font-family-2);
-    font-size:70px;
-    height: fit-content;
-    color: #b80000;
+    font-size:60px;
+    color: #ffffff;
+    background-color: #b80000c2;
+    border-radius: 10rem;
+    padding: 1rem 2.5rem;
+    margin: 2rem;
 }
 .focus-in-expand {
 	-webkit-animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

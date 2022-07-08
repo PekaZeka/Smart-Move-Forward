@@ -14,7 +14,8 @@
 .smf__counter:hover{
     -webkit-animation: slide-fwd-top 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: slide-fwd-top 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            background: linear-gradient(50deg, #fdcd3b 60%, #ffed4b 60%);     
-    box-shadow: #0000004d 0px 19px 38px, #00000038 0px 15px 12px;
-    border-radius: 5%;
+    background: linear-gradient(70deg, #013A6B 60%, #004E95 60%);
+    box-shadow: #0000004d 10px 15px 30px, #00000038 0px 15px 12px;
+    border-radius: 1.5rem;
+    color: #ffffff;
 }

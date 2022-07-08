@@ -8,8 +8,8 @@ const Footer = () => {
   });
   
   return (
-    <footer ref={ref} className={inView?'smf__Footer gradient__bg slide-in-left':'smf__Footer gradient__bg'} >
-      <h4> © <Time /> Smart Move Forward d.o.o.<br/>All Rights Reserved</h4>
+    <footer className='smf__Footer gradient__bg'>
+      <h4 ref={ref} className={inView?'fade-in':''}> © <Time /> Smart Move Forward d.o.o.<br/>All Rights Reserved</h4>
     </footer>
   )
 }

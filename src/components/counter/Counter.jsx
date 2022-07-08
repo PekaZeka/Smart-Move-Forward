@@ -9,7 +9,7 @@ function Counter({number, text, isCounting}) {
     useEffect(() => {
         const timeout = setTimeout(() => {
           setShow(true)
-        }, 500)
+        }, 600)
     
         return () => clearTimeout(timeout)
     

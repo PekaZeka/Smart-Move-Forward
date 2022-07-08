@@ -1,5 +1,5 @@
 import { useInView } from 'react-intersection-observer';
-import { Slider, Button, Navbar } from '../../components'
+import { Slider, Button, Navbar, Logo } from '../../components'
 import './header.css'
 
 const Header = () => {
@@ -9,12 +9,13 @@ const Header = () => {
   return (
     <header className='smf__header' id='Home'>
       <Slider />
-      <div>
-        <Navbar />
-      </div>
+      <Navbar />
       <div ref={ref} className={ inView? 'smf__header-title fade-in':'smf__header-title'}>
-        <h1>SMART MOVE FORWARD</h1>
+        <div className='smf__header-logo'>
+          <Logo/>
+        </div>
         <Button/>
+        <h1>SMART MOVE FORWARD</h1>
       </div>
     </header>
   )
