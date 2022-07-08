@@ -1,4 +1,4 @@
-import { ScrollToTop } from "./components";
+import { ScrollToTop, Navbar } from "./components";
 import {
   ContactInfo,
   Projects,
@@ -12,9 +12,8 @@ import "./app.css";
 const App = () => {
   return (
     <div>
-      <div>
-        <Header />
-      </div>
+      <Navbar />
+      <Header />
       <div className="gradient__bg">
         <WhatWeDo />
         <Projects />

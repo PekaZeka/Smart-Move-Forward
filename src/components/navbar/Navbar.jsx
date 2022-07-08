@@ -1,5 +1,4 @@
 import { useInView } from 'react-intersection-observer';
-import { Logo } from '../../components'
 import lngIcon from '../../assets/internet.png'
 import './navbar.css'
 
@@ -13,10 +12,12 @@ const Navbar = () => {
           <p className='scale-up-center'><a href="#WhatWeDo">Services</a></p>
           <p className='scale-up-center'><a href="#Projects">Projects</a></p>
           <p className='scale-up-center'><a href="#Contact">Contact</a></p>
-          <a href='#Home' className='smf__Navbar-language'>
-            <img src={lngIcon} alt="lngIcon" />
-            <p className='scale-up-center'>EN</p>
-          </a>
+          <div className='smf__Navbar-language'>
+            <a href='#Home' >
+              <img src={lngIcon} alt="lngIcon" />
+              <p className='scale-up-center'>EN</p>
+            </a>
+          </div>
         </div>
     </div>
   )

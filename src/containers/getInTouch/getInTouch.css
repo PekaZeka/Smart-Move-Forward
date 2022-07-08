@@ -6,10 +6,10 @@
     padding: 2rem 0;
     margin-bottom: 2rem;
     opacity: 0;
-    color: #ffffff;
+    
 }
 .smf__GetInTouch-Background{
-    background: linear-gradient(110deg, #013A6B 60%, #004E95 60%);
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
     box-shadow: 0 10px 20px #00000033;
 }
 .smf__GetInTouch-logo{
@@ -17,7 +17,7 @@
     margin: 2rem 0;
 }
 .smf__GetInTouch-logoParagraph_top {
-    font-size: 12px;
+    font-size: 13px;
 }
 .smf__GetInTouch-logoParagraph_bot {
     font-size: 20px;

@@ -1,37 +1,35 @@
 .smf__Navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 500;
-    padding: 0 20rem;
-    z-index: 1000;
     opacity: 0;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 99;
 }
 .smf__Navbar-containers{
     display: flex;
     align-items: center;
     gap: 35px;
-    padding: 1rem 4rem;
-    border-bottom: 2px solid #ffffff;
-    box-shadow: 0 2.5px 2.5px -2px #000000;
-    text-shadow: #707070 2.5px 2.5px 2.5px;
-    color: #ffffff;
+    padding: 0.5rem ;
+    color: #5b5b5b;
     font-weight: 700;
 }
-.smf__Navbar-containers a{
-    -webkit-transition: color 0.3s;
-            transition: color 0.3s;
-}
+
 .smf__Navbar-language{
+    position: absolute;    
+    right: 0;
+    margin-right: 10rem;
+}
+
+.smf__Navbar-language a{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
-    margin-left: 40px;
 }
 .smf__Navbar-language img{
     width: 30px;
