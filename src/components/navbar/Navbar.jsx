@@ -1,10 +1,14 @@
+import { useInView } from 'react-intersection-observer';
 import { Logo } from '../../components'
 import lngIcon from '../../assets/internet.png'
 import './navbar.css'
 
 const Navbar = () => {
+  const [ ref, inView] = useInView({
+    threshold: 0.55,
+  });
   return (
-    <div className='smf__Navbar'>
+    <div ref={ref} className={inView?'smf__Navbar fade-in':'smf__Navbar'}>
         <div className='smf__Navbar-Logo'>
           <Logo/>
         </div>

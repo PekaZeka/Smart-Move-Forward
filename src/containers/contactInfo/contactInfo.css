@@ -5,6 +5,7 @@
     background-color: #ffffff;
     padding: 2rem 6rem;
     margin-bottom: 3rem;
+    opacity: 0;
 }
 .smf__ContactInfo-content{
     display: flex;

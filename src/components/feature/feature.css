@@ -1,3 +1,6 @@
+.smf__Feature-container{
+  opacity: 0;
+}
 .smf__Feature{
     height: 25rem;
     width: 40rem;

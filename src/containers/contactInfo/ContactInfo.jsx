@@ -1,10 +1,16 @@
 import { Map } from '../../components'
+import { useInView } from 'react-intersection-observer';
 import {  location, phone, mail } from './imports'
 import './contactInfo.css'
 
 const ContactInfo = () => {
+
+  const { ref, inView } = useInView({
+    threshold: 0.4,
+  });
+  
   return (
-    <div className="smf__ContactInfo">
+    <div ref={ref} className={inView?"smf__ContactInfo fade-in":"smf__ContactInfo"}>
       <div className="smf__ContactInfo-content">
         <h3>Contact Info</h3>
         <div className='smf__ContactInfo-content_location'>

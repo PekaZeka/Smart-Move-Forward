@@ -9,6 +9,10 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
+    opacity: 0;
+  }
+  .smf__navbar{
+    opacity: 0;
   }
   .smf__header-title h1{
     font-family: var(--font-family-2);
