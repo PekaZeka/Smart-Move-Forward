@@ -6,7 +6,10 @@
     font-size: 18px;
     font-weight: 500;
     opacity: 0;
-    background-color: #ffffff;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, #dbdbdb66 0%, #00000040 200%);
+    background-blend-mode: multiply;
+    color: #ffffff;
+    box-shadow: 0 10px 20px #00000033;
     position: absolute;
     z-index: 99;
 }
@@ -15,22 +18,21 @@
     align-items: center;
     gap: 35px;
     padding: 0.5rem ;
-    color: #5b5b5b;
     font-weight: 700;
 }
 
 .smf__Navbar-language{
     position: absolute;    
     right: 0;
-    margin-right: 10rem;
+    margin-right: 12.5rem;
 }
 
 .smf__Navbar-language a{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 11px;
 }
 .smf__Navbar-language img{
-    width: 30px;
+    width: 21px;
 }

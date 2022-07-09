@@ -1,6 +1,6 @@
-import battery from "../../assets/battery.png";
+import idea from "../../assets/idea.png";
 import cable from "../../assets/cable.png";
-import cpu_tower from "../../assets/cpu-tower.png";
-import gear from "../../assets/gear.png";
+import cpu from "../../assets/cpu.png";
+import machine from "../../assets/machine.png";
 
-export { battery, cable, cpu_tower, gear };
+export { idea, cable, cpu, machine };

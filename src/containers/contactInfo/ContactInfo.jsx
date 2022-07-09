@@ -20,7 +20,7 @@ const ContactInfo = () => {
             <br></br>
             Doža Đerđa 128
             <br></br>
-            21232 Temerin  
+            21235 Temerin  
             <br></br>
             Serbia 
           </p>
