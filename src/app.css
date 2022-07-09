@@ -11,7 +11,17 @@ body{
 a{
   color: unset;
   text-decoration: none;
-}  
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, #dbdbdb66 0%, #00000040 200%);
+}
+::-webkit-scrollbar-thumb{
+  background-color: #b80000;
+  border-radius: 25px;
+}
 .gradient__bg{
   background: rgb(253,251,251);
   background: -moz-radial-gradient(circle, rgba(253,251,251,1) 0%, rgba(235,237,238,1) 100%);

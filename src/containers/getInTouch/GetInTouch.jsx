@@ -1,5 +1,5 @@
 import { useInView } from 'react-intersection-observer';
-import { Button, Logo } from '../../components'
+import { Popup, Logo } from '../../components'
 import './getInTouch.css'
 
 
@@ -17,7 +17,7 @@ const GetInTouch = () => {
         </div>
         <p className='smf__GetInTouch-logoParagraph_bot fade-in'>ELEVATE YOUR BUSINESS</p>
         <div className='fade-in'>
-          <Button />
+          <Popup />
         </div>
       </div>
     </div>

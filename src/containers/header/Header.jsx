@@ -1,5 +1,5 @@
 import { useInView } from 'react-intersection-observer';
-import { Slider, Button, Logo } from '../../components'
+import { Slider, Popup, Logo } from '../../components'
 import './header.css'
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
         <div  className='smf__header-logo'>
           <Logo/>
         </div >
-        <Button />
+        <Popup />
         <h1 ref={ref}>SMART MOVE FORWARD</h1>
       </div>
     </header>
