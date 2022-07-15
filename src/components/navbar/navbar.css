@@ -20,13 +20,10 @@
     padding: 0.5rem ;
     font-weight: 700;
 }
-
 .smf__Navbar-language{
     position: absolute;    
-    right: 0;
-    margin-right: 12.5rem;
+    right: 12%;  
 }
-
 .smf__Navbar-language a{
     display: flex;
     align-items: center;

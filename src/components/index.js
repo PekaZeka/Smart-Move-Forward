@@ -1,4 +1,3 @@
-export { default as Button } from "./button/Button";
 export { default as Feature } from "./feature/Feature";
 export { default as Map } from "./map/Map";
 export { default as PageSweeper } from "./pageSweeper/PageSweeper";

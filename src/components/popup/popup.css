@@ -1,37 +1,72 @@
 body.active-Popup {
-    overflow-y: hidden;
+    overflow: hidden;
 }
-.Popup, .overlay {
-    width: 100vw;
-    height: 100vh;
+.smf__popup-overlay{
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1000;
+}
+.smf__popup-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     position: fixed;
-}
-.overlay {
-    background: rgba(49,49,49,0.8);
-}
-.Popup-content {
-    position: absolute;
+    flex-direction: column;
+    width: 43vw;
+    height: 55vh;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    line-height: 1.4;
-    background: #f1f1f1;
-    padding: 14px 28px;
-    border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
+    background: rgb(0, 0, 0);
+    z-index: 1000;
+    border-radius: 50px;
 }
-.Popup-content_inputs{
+.smf__popup-content h2{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 37px;
+    margin-bottom: 2.5rem;
+}
+.smf__popup-closeBtn{
+    position: absolute;
+    right: 4%;
+    top: 6%;
+    border-radius: 50%;
+    background-color: transparent;
+    border:none;
+    box-shadow: none;
+    cursor: pointer;
+}
+.smf__popup-closeImg{
+    width: 45px;
+}
+.smf__popup-content_inputs{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    width: 20vw;
 }
-.close-Popup {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
+.smf__popup-content_inputs textarea{
+    resize: none;
+    height: 3.5rem;
 }
+.smf__popup-content_inputs input, .smf__popup-content_inputs textarea{
+    height: 2.4rem;
+    padding-left: 10px;
+    background-color: #b8000055;
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+}
+.smf__popup-content_inputs input::placeholder , .smf__popup-content_inputs textarea::placeholder {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+

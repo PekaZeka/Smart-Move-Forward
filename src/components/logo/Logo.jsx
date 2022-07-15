@@ -17,7 +17,7 @@ const Logo = () => {
     <div className="logo" onMouseEnter={() => changeClassRotate()} onMouseLeave={() => removeChanges()}>
       <a href="#Home">
         <LogoSVG gear1={FirstGear} gear2={SecondGear} />
-      </a>
+      </a> 
     </div>
   )
 }

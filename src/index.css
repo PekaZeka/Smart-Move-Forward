@@ -9,6 +9,26 @@
   --color-text: #C6CFFF;
   --color-subtext: #FF957342;
 }
+.smf-button{
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0 56px;
+  height: 50px;
+  line-height: 45px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #b80000c2;
+  font-weight: 700;
+  font-size: 22px;
+  box-shadow: 0 4px 14px 0 #f7f7f763;
+  transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+}
+.smf-button:hover{
+background: #ffffffe6;
+box-shadow: 0 6px 20px #ffffff3b;
+}
 .slide-in-bottom{
 	-webkit-animation: slide-in-bottom 0.75s ease-out 0.2s both;
 	        animation: slide-in-bottom 0.75s ease-out 0.2s both;
