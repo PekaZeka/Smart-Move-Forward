@@ -12,7 +12,7 @@ const GetInTouch = () => {
   
   return (
     <div className='smf__GetInTouch-Background'>
-      <div ref={ref} id='Contact' className={inView ? 'smf__GetInTouch fade-in':'smf__GetInTouch'} >
+      <div ref={ref} id='Contact' className={inView ? 'smf__GetInTouch fade-in':'smf__GetInTouch fade-out-fast'} >
         <p className='smf__GetInTouch-logoParagraph_top fade-in'>EXCELENCE IN MACHINE MANUFACTURING</p>
         <div className='smf__GetInTouch-logo'>
           <Logo isClickable={true}/>

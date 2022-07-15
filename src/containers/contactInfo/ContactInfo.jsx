@@ -10,7 +10,7 @@ const ContactInfo = () => {
   });
   
   return (
-    <div ref={ref} className={inView?"smf__ContactInfo fade-in":"smf__ContactInfo"}>
+    <div ref={ref} className={inView?"smf__ContactInfo fade-in":"smf__ContactInfo fade-out-fast"}>
       <div className="smf__ContactInfo-content">
         <h3>Contact Info</h3>
         <div className='smf__ContactInfo-content_location'>

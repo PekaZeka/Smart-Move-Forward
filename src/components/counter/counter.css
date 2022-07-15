@@ -6,10 +6,10 @@
     width: 10rem;
     height: 10rem;
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     color: #464646;
-    margin: 3rem 5rem;
+    margin: 2vh 2vw;
 }
 .smf__counter:hover{
     -webkit-animation: slide-fwd-top 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

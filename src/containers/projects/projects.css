@@ -1,10 +1,9 @@
 .smf__projects{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    width: 100%;
     background-color: #ffffff;
 }
 
@@ -13,7 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 40rem;
+    width: 40vw;
     opacity: 0;
 }
 .smf__projects-header h1{
@@ -28,5 +27,7 @@
 }
 .smf__projects-content{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     opacity: 0;
 }

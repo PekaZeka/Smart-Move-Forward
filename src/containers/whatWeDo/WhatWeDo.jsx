@@ -5,12 +5,12 @@ import { useInView } from 'react-intersection-observer';
 
 const WhatWeDo = () => {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.8,
   });
 
   return (
     <div  className='smf__WhatWeDo-container' id='WhatWeDo'>
-      <div ref={ref} className={inView?'smf__WhatWeDo-container_title slide-in-left':'smf__WhatWeDo-container_title'}>
+      <div ref={ref} className={inView?'smf__WhatWeDo-container_title slide-in-left':'smf__WhatWeDo-container_title slide-out-right'}>
         <p>EXCELENCE IN MACHINE MANUFACTURING</p>
         <h1>What We Do</h1>
       </div>

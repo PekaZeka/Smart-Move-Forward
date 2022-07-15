@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className='smf__header' id='Home'>
       <Slider />
-      <div className={ inView? 'smf__header-title fade-in':'smf__header-title'}>
+      <div className={ inView? 'smf__header-title fade-in':'smf__header-title fade-out-fast'}>
         <div  className='smf__header-logo'>
           <Logo/>
         </div >
