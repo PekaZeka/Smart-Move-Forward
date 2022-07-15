@@ -1,9 +1,10 @@
 .smf__ContactInfo{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10rem;
     align-items: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
     opacity: 0;
 }
 .smf__ContactInfo-content{

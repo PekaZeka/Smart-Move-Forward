@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  
   display: flex;
   justify-content: center;
   flex-direction: row;

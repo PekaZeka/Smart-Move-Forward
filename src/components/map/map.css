@@ -2,11 +2,10 @@
     display: flex;
     justify-content: flex-end;
     box-shadow: #0000004d 0px 19px 38px, #00000038 0px 15px 12px;
-    width: 62rem;
+    width: 60%;
     height: 25rem;  
 }
 .smf__Map iframe{
     position: relative;
-    width: 62rem;
-    height: 25rem;
+    width: 100%;
 }
