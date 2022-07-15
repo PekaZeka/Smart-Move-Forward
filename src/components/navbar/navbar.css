@@ -20,10 +20,6 @@
     padding: 0.5rem ;
     font-weight: 700;
 }
-.smf__Navbar-language{
-    position: absolute;    
-    right: 12%;  
-}
 .smf__Navbar-language a{
     display: flex;
     align-items: center;
@@ -32,4 +28,42 @@
 }
 .smf__Navbar-language img{
     width: 21px;
+}
+.smf__Navbar-menu{
+    
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+    margin: 0.3rem 0;
+}
+.smf__Navbar-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    padding: 1.7rem;
+    position: absolute;
+    right: 0;
+    top: 3.5vh;
+    left:3vw;
+    min-width: fit-content;
+    line-height: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+.smf__Navbar-menu svg{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+    .smf__Navbar-containers {
+        display: none;
+    }
+    .smf__Navbar{
+        justify-content: flex-start;
+    }
+    .smf__Navbar-menu {
+        display: flex;
+    }
 }
