@@ -1,6 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable no-unused-vars */
 /* eslint-disable consistent-return */
 /* eslint-disable react/prop-types */
 import { useInView } from 'react-intersection-observer';
+import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import './counter.css';
 

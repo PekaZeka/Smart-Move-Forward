@@ -2,8 +2,8 @@
 	opacity: 0;
 }
 .smf__Feature {
-	width: 40rem;
-	height: 25rem;
+	width: clamp(20rem,35vw,45rem);
+	height: clamp(20rem, 20vh,25rem) ;
 	padding: 2rem;
 	display: block;
 	flex-direction: column;

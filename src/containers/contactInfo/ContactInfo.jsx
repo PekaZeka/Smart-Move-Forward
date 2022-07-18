@@ -5,16 +5,18 @@ import './contactInfo.css';
 
 function ContactInfo() {
 	const { ref, inView } = useInView({
-		threshold: 0.5
+		threshold: 0.25
 	});
 
 	return (
-		<div
-			ref={ref}
-			className={
-				inView ? 'smf__ContactInfo fade-in' : 'smf__ContactInfo fade-out-fast'
-			}>
-			<div className="smf__ContactInfo-content">
+		<div className="smf__ContactInfo">
+			<div
+				ref={ref}
+				className={
+					inView
+						? 'smf__ContactInfo-content fade-in'
+						: 'smf__ContactInfo-content fade-out-fast'
+				}>
 				<h3>Contact Info</h3>
 				<div className="smf__ContactInfo-content_location">
 					<img src={location} alt="location" />

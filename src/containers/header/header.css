@@ -27,6 +27,7 @@
 	border-radius: 10rem;
 	padding: 1rem 2.5rem;
 	margin: 3.5rem 0;
+	text-align: center;
 }
 .focus-in-expand {
 	-webkit-animation: focus-in-expand 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
