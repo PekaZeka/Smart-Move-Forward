@@ -4,7 +4,7 @@
 	flex-wrap: wrap;
 	gap: clamp(2rem,10vw,10rem);
 	align-items: center;
-	padding: 3rem;
+	padding: clamp(0.8rem,2vw,3rem);
 }
 .smf__ContactInfo-content {
 	display: flex;
@@ -22,7 +22,7 @@
 }
 .smf__ContactInfo-content p,
 .smf__ContactInfo-content a {
-	font-size: 20px;
+	font-size: clamp(17px,2vw,20px);
 }
 .smf__ContactInfo-content p {
 	color: #6b6b6b;

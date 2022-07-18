@@ -15,7 +15,6 @@ function Logo() {
 	};
 	return (
 		<div
-			className="logo"
 			onMouseEnter={() => changeClassRotate()}
 			onMouseLeave={() => removeChanges()}>
 			<a href="#Home">

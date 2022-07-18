@@ -13,14 +13,12 @@
 	display: inline-block;
 	cursor: pointer;
 	border: none;
-	padding: 0 56px;
-	height: clamp(30px, 5vh, 50px);
-	line-height: 45px;
+	padding: 1rem 2.5rem;
 	border-radius: 7px;
 	background-color: #ffffff;
 	color: #b80000c2;
 	font-weight: 700;
-	font-size: 22px;
+	font-size: clamp(19px,3vw,25px);
 	box-shadow: 0 4px 14px 0 #f7f7f763;
 	transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }

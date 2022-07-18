@@ -8,3 +8,8 @@
 	position: relative;
 	width: 100%;
 }
+@media screen and (min-width: 1000px) {
+	.smf__Map {
+		width: 80%;
+	}
+}
