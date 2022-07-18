@@ -1,41 +1,40 @@
 .container-slider {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: flex-end;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: flex-end;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
 }
 .slide {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity ease-in-out 0.4s;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+	opacity: 0;
+	transition: opacity ease-in-out 0.4s;
 }
 .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .active-anim {
-  opacity: 1;
+	opacity: 1;
 }
 .dot {
-  width: 1.1rem;
-  height: 1.1rem;
-  border-radius: 50%;
-  margin: 3rem 0.8rem;
-  background: #999999a3;
-  cursor: pointer;
-  display: inline-block;
-  
+	width: 1.1rem;
+	height: 1.1rem;
+	border-radius: 50%;
+	margin: 3rem 0.8rem;
+	background: #999999a3;
+	cursor: pointer;
+	display: inline-block;
 }
 .dot.active {
-  background: #cfcfcfe2
+	background: #cfcfcfe2;
 }
-.container-dots{
-  position: relative;
+.container-dots {
+	position: relative;
 }

@@ -1,64 +1,61 @@
-.gear1{
-    fill: #ffffff;
-    transform-box: fill-box;
-    transform-origin: center;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-name: rotate-center;
-            animation-name: rotate-center;
-    -webkit-animation-duration: 6s;
-            animation-duration: 6s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused; 
+.gear1 {
+	fill: #ffffff;
+	transform-box: fill-box;
+	transform-origin: center;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-name: rotate-center;
+	animation-name: rotate-center;
+	-webkit-animation-duration: 6s;
+	animation-duration: 6s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
 }
-.gear2{
-    fill:#b80000c2;
-    transform-box: fill-box;
-    transform-origin: center;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-name: rotate-center;
-            animation-name: rotate-center;
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
+.gear2 {
+	fill: #b80000c2;
+	transform-box: fill-box;
+	transform-origin: center;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-name: rotate-center;
+	animation-name: rotate-center;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
 }
-.txt{
-    fill:#b80000;
+.txt {
+	fill: #b80000;
 }
-.rotate-center{
-  
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+.rotate-center {
+	-webkit-animation-play-state: running;
+	animation-play-state: running;
 }
-.rotate-center-reverse{
-  
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+.rotate-center-reverse {
+	-webkit-animation-play-state: running;
+	animation-play-state: running;
 }
 @-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
 }
 @keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
 }
-  
