@@ -1,18 +1,30 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/prop-types */
+import { useEffect } from 'react';
 import './popup.css';
 import ReactDom from 'react-dom';
 import close from '../../assets/close.png';
 
 function Popup({ open, onClose }) {
+	useEffect(() => {
+		const keyDownHandler = (event) => {
+			if (event.key === 'Escape') {
+				event.preventDefault();
+				onClose();
+			}
+		};
+		document.addEventListener('keydown', keyDownHandler);
+		return () => {
+			document.removeEventListener('keydown', keyDownHandler);
+		};
+	}, [onClose]);
 	if (open) {
 		document.body.classList.add('active-Popup');
 	} else {
 		document.body.classList.remove('active-Popup');
 		return null;
 	}
-
 	return ReactDom.createPortal(
 		<>
 			<div onClick={onClose} className="smf__popup-overlay" />
