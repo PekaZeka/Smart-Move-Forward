@@ -2,9 +2,9 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: clamp(2rem, 10vw, 10rem);
+	gap: clamp(2rem, 3vw, 5rem);
 	align-items: center;
-	padding: clamp(0.8rem, 2vw, 3rem);
+	padding: clamp(4rem, 3.5vw, 7rem);
 }
 .smf__ContactInfo-content {
 	display: flex;

@@ -1,7 +1,6 @@
 .smf__Map {
 	display: flex;
 	box-shadow: #0000004d 0px 19px 38px, #00000038 0px 15px 12px;
-	width: 60%;
 	height: 25rem;
 	margin-bottom: 2.5rem;
 }
