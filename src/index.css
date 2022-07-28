@@ -21,7 +21,6 @@
 	font-weight: 700;
 	font-size: clamp(19px, 3vw, 25px);
 	box-shadow: 0 4px 14px 0 #f7f7f763;
-	transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 .slide-in-left {
 	-webkit-animation: slide-in-left 0.75s ease-out both;
@@ -124,9 +123,9 @@
 	}
 }
 .scale-up-center:hover {
-	-webkit-animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1)
+	-webkit-animation: scale-up-center 0.25s cubic-bezier(0.39, 0.575, 0.565, 1)
 		both;
-	animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+	animation: scale-up-center 0.25s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @-webkit-keyframes scale-up-center {
 	0% {

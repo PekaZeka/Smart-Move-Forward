@@ -33,7 +33,10 @@ function Popup({ open, onClose }) {
 		<>
 			<div onClick={onClose} className="smf__popup-overlay" />
 			<div className="smf__popup-content">
-				<button type="button" className="smf__popup-closeBtn" onClick={onClose}>
+				<button
+					type="button"
+					className="smf__popup-closeBtn scale-up-center"
+					onClick={onClose}>
 					<img src={close} className="smf__popup-closeImg" alt="close icon" />
 				</button>
 				<div className="smf__popup-content_form">
@@ -57,7 +60,9 @@ function Popup({ open, onClose }) {
 							required="true"
 						/>
 						<textarea placeholder="Message" name="textarea" />
-						<button type="submit" className="smf__popup-sendBtn">
+						<button
+							type="submit"
+							className="smf__popup-sendBtn scale-up-center">
 							<img
 								src={paperPlane}
 								className="smf__popup-paperPlane"
