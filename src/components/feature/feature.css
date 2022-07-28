@@ -21,7 +21,8 @@
 	width: 100%;
 }
 .smf__Feature-header h1 {
-	margin: 0 0 3rem 0;
+	margin-bottom: 2.5rem;
+	font-size: 28px;
 }
 .smf__Feature-content p {
 	font-size: 20px;
@@ -61,7 +62,7 @@
 @media screen and (max-width: 1650px) {
 	.smf__Feature {
 		width: 32rem;
-		height: 32rem;
+		height: 27.5rem;
 		padding: 2rem;
 		display: block;
 		flex-direction: column;
@@ -71,18 +72,23 @@
 @media screen and (max-width: 1240px) {
 	.smf__Feature {
 		width: 26.5rem;
-		height: 35rem;
+		height: 31rem;
 		padding: 2rem;
 		display: block;
 		flex-direction: column;
 		margin: 1rem;
 	}
 }
+@media screen and (max-width: 984px) {
+	.smf__Feature {
+		height: fit-content;
+	}
+}
 @media screen and (max-width: 505px) {
 	.smf__Feature {
 		width: 18rem;
-		height: 44.5rem;
-		padding: 1rem;
+		height: fit-content;
+		padding: 2rem 1rem;
 		display: block;
 		flex-direction: column;
 		margin: 1rem;

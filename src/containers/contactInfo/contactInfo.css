@@ -2,9 +2,9 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: clamp(2rem,10vw,10rem);
+	gap: clamp(2rem, 10vw, 10rem);
 	align-items: center;
-	padding: clamp(0.8rem,2vw,3rem);
+	padding: clamp(0.8rem, 2vw, 3rem);
 }
 .smf__ContactInfo-content {
 	display: flex;
@@ -22,7 +22,7 @@
 }
 .smf__ContactInfo-content p,
 .smf__ContactInfo-content a {
-	font-size: clamp(17px,2vw,20px);
+	font-size: clamp(17px, 2vw, 20px);
 }
 .smf__ContactInfo-content p {
 	color: #6b6b6b;
@@ -41,9 +41,15 @@
 	align-items: center;
 	margin-bottom: 2.5rem;
 }
-@media screen and (max-width: 964px) {
+@media screen and (max-width: 1000px) {
 	.smf__ContactInfo-content h3 {
 		text-align: center;
 	}
+	.smf__ContactInfo-content_mail {
+		margin-bottom: 0;
+	}
+	.smf__ContactInfo {
+		gap: 2.5rem;
+		padding: 0;
+	}
 }
-

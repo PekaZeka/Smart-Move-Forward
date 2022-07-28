@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@800&family=Ubuntu:wght@700&display=swap');
 
 :root {
 	--font-family-1: 'Manrope', sans-serif;
 	--font-family-2: 'Open Sans', sans-serif;
+	--font-family-3: 'Ubuntu', sans-serif;
 
 	--color-bg: #ffffff;
 	--color-getintouch: #5873ff;
@@ -13,12 +14,12 @@
 	display: inline-block;
 	cursor: pointer;
 	border: none;
-	padding: 1rem 2.5rem;
+	padding: 0.7rem 2.5rem;
 	border-radius: 7px;
 	background-color: #ffffff;
 	color: #b80000c2;
 	font-weight: 700;
-	font-size: clamp(19px,3vw,25px);
+	font-size: clamp(19px, 3vw, 25px);
 	box-shadow: 0 4px 14px 0 #f7f7f763;
 	transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
