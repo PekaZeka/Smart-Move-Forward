@@ -6,8 +6,8 @@
 	font-family: var(--font-family-1);
 }
 body {
-	background: var(--color-bg);
 	overflow-x: hidden;
+	background-color: #353535;
 }
 a {
 	color: unset;
@@ -19,6 +19,7 @@ a {
 ::-webkit-scrollbar-track {
 	background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
 		linear-gradient(to top, #dbdbdb66 0%, #00000040 200%);
+	border-radius: 25px;
 }
 ::-webkit-scrollbar-thumb {
 	background-color: #b80000;
