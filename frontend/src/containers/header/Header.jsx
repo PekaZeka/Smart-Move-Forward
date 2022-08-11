@@ -28,7 +28,11 @@ function Header() {
 					Contact
 				</button>
 
-				<Popup open={isOpen} onClose={() => setIsOpen(false)} />
+				<Popup
+					open={isOpen}
+					onClose={() => setIsOpen(false)}
+					keepOpen={() => setIsOpen(true)}
+				/>
 
 				<h1 ref={ref}>SMART MOVE FORWARD</h1>
 			</div>

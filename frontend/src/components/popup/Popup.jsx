@@ -8,14 +8,15 @@ import close from '../../assets/close.png';
 import paperPlane from '../../assets/paperPlane.png';
 import './popup.css';
 
-function Popup({ open, onClose }) {
+function Popup({ open, onClose, keepOpen }) {
 	const [sent, setSent] = useState(false);
 	const [name, setName] = useState('');
 	const [mail, setMail] = useState('');
 	const [phone, setPhone] = useState('');
 	const [message, setMessage] = useState('');
 
-	const handleSend = async () => {
+	const handleSend = async (event) => {
+		event.preventDefault();
 		setSent(true);
 		try {
 			await axios.post('http://localhost:3001/send_mail', {
@@ -30,6 +31,7 @@ function Popup({ open, onClose }) {
 	};
 
 	useEffect(() => {
+		const timeout = setTimeout({ onClose }, 3000);
 		const keyDownHandler = (event) => {
 			if (event.key === 'Escape') {
 				event.preventDefault();
@@ -42,6 +44,7 @@ function Popup({ open, onClose }) {
 		document.addEventListener('keydown', keyDownHandler);
 		return () => {
 			document.removeEventListener('keydown', keyDownHandler);
+			clearTimeout(timeout);
 		};
 	}, [onClose]);
 	if (open) {
@@ -61,58 +64,62 @@ function Popup({ open, onClose }) {
 					<img src={close} className="smf__popup-closeImg" alt="close icon" />
 				</button>
 				<div className="smf__popup-content_form">
-					<h2>SEND US A MESSAGE</h2>
-					<form
-						onSubmit={handleSend}
-						className="smf__popup-content_inputs"
-						autoComplete="off"
-						spellCheck="false">
-						<input
-							type="name"
-							name="name"
-							placeholder="Name"
-							required="true"
-							value={name}
-							onChange={(e) => setName(e.target.value)}
-						/>
-						<input
-							type="email"
-							name="email"
-							placeholder="E-mail"
-							required="true"
-							value={mail}
-							onChange={(e) => setMail(e.target.value)}
-						/>
-						<input
-							onKeyPress={(event) => {
-								if (!/[0-9 +/-]/.test(event.key)) {
-									event.preventDefault();
-								}
-							}}
-							type="tel"
-							name="phone"
-							placeholder="Phone"
-							value={phone}
-							onChange={(e) => setPhone(e.target.value)}
-						/>
-						<textarea
-							placeholder="Message"
-							name="textarea"
-							required="true"
-							value={message}
-							onChange={(e) => setMessage(e.target.value)}
-						/>
-						<button
-							type="submit"
-							className="smf__popup-sendBtn scale-up-center">
-							<img
-								src={paperPlane}
-								className="smf__popup-paperPlane"
-								alt="paperPlane"
-							/>
-							SEND
-						</button>
-					</form>
+					{!sent ? (
+						<>
+							<h2>SEND US A MESSAGE</h2>
+							<form
+								onSubmit={handleSend}
+								className="smf__popup-content_inputs"
+								autoComplete="off"
+								spellCheck="false">
+								<input
+									type="name"
+									name="name"
+									placeholder="Name"
+									value={name}
+									onChange={(e) => setName(e.target.value)}
+								/>
+								<input
+									type="email"
+									name="email"
+									placeholder="E-mail"
+									value={mail}
+									onChange={(e) => setMail(e.target.value)}
+								/>
+								<input
+									onKeyPress={(event) => {
+										if (!/[0-9 +/-]/.test(event.key)) {
+											event.preventDefault();
+										}
+									}}
+									type="tel"
+									name="phone"
+									placeholder="Phone"
+									value={phone}
+									onChange={(e) => setPhone(e.target.value)}
+								/>
+								<textarea
+									placeholder="Message"
+									name="textarea"
+									value={message}
+									onChange={(e) => setMessage(e.target.value)}
+								/>
+								<button
+									onSubmit={keepOpen}
+									type="submit"
+									className="smf__popup-sendBtn scale-up-center">
+									<img
+										src={paperPlane}
+										className="smf__popup-paperPlane"
+										alt="paperPlane"
+									/>
+									SEND
+								</button>
+							</form>
+						</>
+					) : (
+						<h1>Hvala Vam na poverenju!</h1>
+					)}
 				</div>
 			</div>
 		</>,
