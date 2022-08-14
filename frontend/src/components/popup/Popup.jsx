@@ -31,7 +31,12 @@ function Popup({ open, onClose, keepOpen }) {
 	};
 
 	useEffect(() => {
-		const timeout = setTimeout({ onClose }, 3000);
+		const timeout = sent
+			? setTimeout(() => {
+					onClose();
+					setSent(false);
+			  }, 3000)
+			: keepOpen;
 		const keyDownHandler = (event) => {
 			if (event.key === 'Escape') {
 				event.preventDefault();
@@ -46,7 +51,7 @@ function Popup({ open, onClose, keepOpen }) {
 			document.removeEventListener('keydown', keyDownHandler);
 			clearTimeout(timeout);
 		};
-	}, [onClose]);
+	}, [onClose, keepOpen, sent]);
 	if (open) {
 		document.body.classList.add('active-Popup');
 	} else {
@@ -57,12 +62,14 @@ function Popup({ open, onClose, keepOpen }) {
 		<>
 			<div onClick={onClose} className="smf__popup-overlay" />
 			<div className="smf__popup-content">
-				<button
-					type="button"
-					className="smf__popup-closeBtn scale-up-center"
-					onClick={onClose}>
-					<img src={close} className="smf__popup-closeImg" alt="close icon" />
-				</button>
+				{!sent && (
+					<button
+						type="button"
+						className="smf__popup-closeBtn scale-up-center"
+						onClick={onClose}>
+						<img src={close} className="smf__popup-closeImg" alt="close icon" />
+					</button>
+				)}
 				<div className="smf__popup-content_form">
 					{!sent ? (
 						<>
@@ -77,6 +84,7 @@ function Popup({ open, onClose, keepOpen }) {
 									name="name"
 									placeholder="Name"
 									value={name}
+									required="true"
 									onChange={(e) => setName(e.target.value)}
 								/>
 								<input
@@ -84,6 +92,7 @@ function Popup({ open, onClose, keepOpen }) {
 									name="email"
 									placeholder="E-mail"
 									value={mail}
+									required="true"
 									onChange={(e) => setMail(e.target.value)}
 								/>
 								<input
@@ -118,7 +127,9 @@ function Popup({ open, onClose, keepOpen }) {
 							</form>
 						</>
 					) : (
-						<h1>Hvala Vam na poverenju!</h1>
+						<h1 className="smf_popup-content_form-sent">
+							Thank you for contacting us!
+						</h1>
 					)}
 				</div>
 			</div>

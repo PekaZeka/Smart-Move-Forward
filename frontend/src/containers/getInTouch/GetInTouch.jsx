@@ -34,7 +34,11 @@ function GetInTouch() {
 						Contact
 					</button>
 
-					<Popup open={isOpen} onClose={() => setIsOpen(false)} />
+					<Popup
+						open={isOpen}
+						onClose={() => setIsOpen(false)}
+						keepOpen={() => setIsOpen(true)}
+					/>
 				</div>
 			</div>
 		</div>

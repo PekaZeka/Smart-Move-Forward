@@ -14,8 +14,9 @@ body.active-Popup {
 	display: flex;
 	align-items: center;
 }
-.smf__popup-content_form-invisible {
-	display: none;
+.smf_popup-content_form-sent {
+	text-align: center;
+	font-family: var(--font-family-3);
 }
 .smf__popup-content {
 	display: flex;
@@ -25,7 +26,7 @@ body.active-Popup {
 	position: fixed;
 	width: clamp(300px, 55vw, 70vw);
 	height: fit-content;
-	padding: 5.3rem 0 3.9rem;
+	padding: 5.3rem 0;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -65,7 +66,7 @@ body.active-Popup {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	width: 40vw;
+	width: clamp(260px, 38vw, 40vw);
 }
 .smf__popup-content_inputs input:focus,
 textarea:focus {
@@ -106,6 +107,7 @@ textarea:focus {
 }
 .smf__popup-sendBtn {
 	display: flex;
+	position: absolute;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
@@ -113,13 +115,14 @@ textarea:focus {
 	height: clamp(2.8rem, 2.5vw, 4rem);
 	border-radius: 31px;
 	padding: 0 20px;
-	margin-top: 1rem;
 	color: #ffffff;
 	background-color: #b80000c2;
 	cursor: pointer;
 	border: none;
 	font-size: 20px;
 	font-family: var(--font-family-3);
+	bottom: 0;
+	margin: 1.5rem;
 }
 .smf__popup-sendBtn:hover {
 	transition: 0.3s ease-out;
