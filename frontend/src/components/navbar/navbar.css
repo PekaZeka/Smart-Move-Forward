@@ -1,3 +1,9 @@
+img {
+	width: 21px;
+}
+.smf__Navbar-containers_lng {
+	cursor: pointer;
+}
 .smf__Navbar {
 	display: flex;
 	justify-content: center;
@@ -21,14 +27,9 @@
 	padding: 0.5rem;
 	font-weight: 700;
 }
-.smf__Navbar-language a {
+.smf__Navbar-containers_languages {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 11px;
-}
-.smf__Navbar-language img {
-	width: 21px;
+	gap: 6px;
 }
 .smf__Navbar-menu {
 	display: none;

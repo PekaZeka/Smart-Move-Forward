@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useTranslation } from 'react-i18next';
@@ -6,6 +7,17 @@ import lngIcon from '../../assets/language.png';
 import './navbar.css';
 
 function Navbar() {
+	const [toggleMenu, setToggleMenu] = useState(false);
+	const [currentLng, setCurrentLng] = useState('en');
+	const toggleLng = () => {
+		if (currentLng === 'srb') {
+			handleChangeLng('en');
+			setCurrentLng('en');
+		} else {
+			handleChangeLng('srb');
+			setCurrentLng('srb');
+		}
+	};
 	const { t, i18n } = useTranslation();
 	const handleChangeLng = (lng) => {
 		i18n.changeLanguage(lng);
@@ -14,7 +26,6 @@ function Navbar() {
 	const { ref, inView } = useInView({
 		threshold: 0.3
 	});
-	const [toggleMenu, setToggleMenu] = useState(false);
 
 	return (
 		<div
@@ -30,15 +41,12 @@ function Navbar() {
 				<p className="scale-up-center">
 					<a href="#Contact">{t('navBar__contact')}</a>
 				</p>
-				<div className="smf__Navbar-language">
-					<a href="#Home" onClick={() => handleChangeLng('en')}>
-						<img src={lngIcon} alt="lngIcon" />
-						<p className="scale-up-center">EN</p>
-					</a>
+				<div className="smf__Navbar-containers_languages">
+					<img src={lngIcon} alt="lngIcon" />
+					<div className="smf__Navbar-containers_lng" onClick={toggleLng}>
+						<p className="scale-up-center">{t('navBar__language')}</p>
+					</div>
 				</div>
-				<a href="#Home" onClick={() => handleChangeLng('srb')}>
-					<p className="scale-up-center">SRB</p>
-				</a>
 			</div>
 			<div className="smf__Navbar-menu">
 				{toggleMenu ? (
@@ -66,16 +74,9 @@ function Navbar() {
 							<p className="scale-up-center">
 								<a href="#Contact">{t('navBar__contact')}</a>
 							</p>
-							<p className="scale-up-center">
-								<a href="#Home" onClick={() => handleChangeLng('en')}>
-									EN
-								</a>
-							</p>
-							<p className="scale-up-center">
-								<a href="#Home" onClick={() => handleChangeLng('srb')}>
-									SRB
-								</a>
-							</p>
+							<div className="smf__Navbar-containers_lng" onClick={toggleLng}>
+								<p className="scale-up-center">{t('navBar__language')}</p>
+							</div>
 						</div>
 					</div>
 				)}
