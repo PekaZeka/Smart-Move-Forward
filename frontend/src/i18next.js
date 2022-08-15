@@ -6,14 +6,14 @@ import srb from './assets/language/srb.json';
 
 i18next.use(initReactI18next).init({
 	resources: {
-		en: {
-			translation: en
-		},
 		srb: {
 			translation: srb
+		},
+		en: {
+			translation: en
 		}
 	},
-	lng: localStorage.getItem('lng') || 'en'
+	lng: localStorage.getItem('lng') || 'srb'
 });
 
 export default i18next;

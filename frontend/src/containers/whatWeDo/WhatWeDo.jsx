@@ -30,18 +30,18 @@ function WhatWeDo() {
 				/>
 				<Feature
 					iconURL={machine}
-					title="Industrial Automation"
-					text="In designing and manufacturing of high-tech electronics we specialize also in miniaturization and low-power-consumption GPS devices such as tracking devices for fleets of vehicles with applications for vehicle telematics and fleet management delivering real-time two-way M2M connectivity. Please feel free to check our solutions here."
+					title={t('whatWeDo__title2')}
+					text={t('whatWeDo__text2')}
 				/>
 				<Feature
 					iconURL={idea}
-					title="Machine Building"
-					text="In designing and manufacturing of high-tech electronics we specialize also in miniaturization and low-power-consumption GPS devices such as tracking devices for fleets of vehicles with applications for vehicle telematics and fleet management delivering real-time two-way M2M connectivity. Please feel free to check our solutions here."
+					title={t('whatWeDo__title3')}
+					text={t('whatWeDo__text3')}
 				/>
 				<Feature
 					iconURL={cpu}
-					title="Custom Electronics"
-					text="AI algorithms are implemented more and more in the field of industrial automation. For instance, the quality control of your production line requires machine vision control systems for the inspection of goods and thus implements machine learning algorithms. With our experiences in AI programming across various applications, we increase productivity and eradicate unnecessary waste, in order to guarantee the optimization of your production processes."
+					title={t('whatWeDo__title4')}
+					text={t('whatWeDo__text4')}
 				/>
 			</div>
 		</div>

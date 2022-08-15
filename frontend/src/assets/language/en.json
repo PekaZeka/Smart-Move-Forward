@@ -4,6 +4,36 @@
 	"navBar__contact": "Contact",
 	"navBar__language": "SRB",
 
+	"contact__btn": "Contact",
+
 	"whatWeDo__p": "EXCELENCE IN MACHINE MANUFACTURING",
-	"whatWeDo__header": "What We Do"
+	"whatWeDo__header": "What We Do",
+	"whatWeDo__title1": "Title one",
+	"whatWeDo__text1": "AI algorithms are implemented more and more in the field of industrial automation. For instance, the quality control of your production line requires machine vision control systems for the inspection of goods and thus implements machine learning algorithms. With our experiences in AI programming across various applications, we increase productivity and eradicate unnecessary waste, in order to guarantee the optimization of your production processes.",
+	"whatWeDo__title2": "Title two",
+	"whatWeDo__text2": "AI algorithms are implemented more and more in the field of industrial automation. For instance, the quality control of your production line requires machine vision control systems for the inspection of goods and thus implements machine learning algorithms. With our experiences in AI programming across various applications, we increase productivity and eradicate unnecessary waste, in order to guarantee the optimization of your production processes.",
+	"whatWeDo__title3": "Title three",
+	"whatWeDo__text3": "PAI algorithms are implemented more and more in the field of industrial automation. For instance, the quality control of your production line requires machine vision control systems for the inspection of goods and thus implements machine learning algorithms. With our experiences in AI programming across various applications, we increase productivity and eradicate unnecessary waste, in order to guarantee the optimization of your production processes.",
+	"whatWeDo__title4": "Title four",
+	"whatWeDo__text4": "AI algorithms are implemented more and more in the field of industrial automation. For instance, the quality control of your production line requires machine vision control systems for the inspection of goods and thus implements machine learning algorithms. With our experiences in AI programming across various applications, we increase productivity and eradicate unnecessary waste, in order to guarantee the optimization of your production processes.",
+
+	"projects__title": "Projects",
+	"projects__description": "trol of your production line requires machine vision control systems for the inspection of goods and thus implements machine learning algorithms. With our experiences in AI programming across various applications, we ",
+	"projects__text1": "YEARS IN BUSSINES",
+	"projects__text2": "PROJECTS DONE",
+	"projects__text3": "HAPPY CLIENTS",
+
+	"getInTouch__header": "EXCELENCE IN MACHINE MANUFACTURING",
+	"getInTouch__description": "ELEVATE YOUR BUSINESS",
+
+	"contactInfo__header": "Contact info",
+	"footer": "All Rights Reserved",
+
+	"popup__header": "SEND US A MESSAGE",
+	"popup__name": "Name",
+	"popup__phone": "Phone",
+	"popup__email": "E-mail",
+	"popup__message": "Message",
+	"popup__btn": "SEND",
+	"popup__tyMsg": "Thank you for contacting us!"
 }

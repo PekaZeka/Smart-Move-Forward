@@ -1,9 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 import { Map } from '../../components';
 import { location, phone, mail } from './imports';
 import './contactInfo.css';
 
 function ContactInfo() {
+	const { t } = useTranslation();
 	const { ref, inView } = useInView({
 		threshold: 0.25
 	});
@@ -17,7 +19,7 @@ function ContactInfo() {
 						? 'smf__ContactInfo-content fade-in'
 						: 'smf__ContactInfo-content fade-out-fast'
 				}>
-				<h3>Contact Info</h3>
+				<h3>{t('contactInfo__header')}</h3>
 				<div className="smf__ContactInfo-content_location">
 					<img src={location} alt="location" />
 					<p>

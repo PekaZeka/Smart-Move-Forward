@@ -4,14 +4,36 @@
 	"navBar__contact": "Kontakt",
 	"navBar__language": "EN",
 
+	"contact__btn": "Kontakt",
+
 	"whatWeDo__p": "IZVRSNOST U MAŠINSKOJ PROIZVODNJI",
 	"whatWeDo__header": "Šta Mi Radimo",
 	"whatWeDo__title1": "Prvi Naslov",
-	"whatWeDo__text1": "AI algorithms are implemented more and more in the field of industrial automation. For instance, the quality control of your production line requires machine vision control systems for the inspection of goods and thus implements machine learning algorithms. With our experiences in AI programming across various applications, we increase productivity and eradicate unnecessary waste, in order to guarantee the optimization of your production processes.",
+	"whatWeDo__text1": "AI algoritmi se sve više primenjuju u oblasti industrijske automatizacije. Na primer, kontrola kvaliteta vaše proizvodne linije zahteva sisteme kontrole mašinskog vida za inspekciju robe i na taj način implementira algoritme mašinskog učenja. Sa našim iskustvom u AI programiranju u različitim aplikacijama, povećavamo produktivnost i iskorenjujemo nepotreban otpad, kako bismo garantovali optimizaciju vaših proizvodnih procesa.",
 	"whatWeDo__title2": "Drugi Naslov",
-	"whatWeDo__text2": "AI algorithms are implemented more and more in the field of industrial automation. For instance, the quality control of your production line requires machine vision control systems for the inspection of goods and thus implements machine learning algorithms. With our experiences in AI programming across various applications, we increase productivity and eradicate unnecessary waste, in order to guarantee the optimization of your production processes.",
+	"whatWeDo__text2": "AI algoritmi se sve više primenjuju u oblasti industrijske automatizacije. Na primer, kontrola kvaliteta vaše proizvodne linije zahteva sisteme kontrole mašinskog vida za inspekciju robe i na taj način implementira algoritme mašinskog učenja. Sa našim iskustvom u AI programiranju u različitim aplikacijama, povećavamo produktivnost i iskorenjujemo nepotreban otpad, kako bismo garantovali optimizaciju vaših proizvodnih procesa",
 	"whatWeDo__title3": "Treci Naslov",
-	"whatWeDo__text3": "PAI algorithms are implemented more and more in the field of industrial automation. For instance, the quality control of your production line requires machine vision control systems for the inspection of goods and thus implements machine learning algorithms. With our experiences in AI programming across various applications, we increase productivity and eradicate unnecessary waste, in order to guarantee the optimization of your production processes.",
+	"whatWeDo__text3": "AI algoritmi se sve više primenjuju u oblasti industrijske automatizacije. Na primer, kontrola kvaliteta vaše proizvodne linije zahteva sisteme kontrole mašinskog vida za inspekciju robe i na taj način implementira algoritme mašinskog učenja. Sa našim iskustvom u AI programiranju u različitim aplikacijama, povećavamo produktivnost i iskorenjujemo nepotreban otpad, kako bismo garantovali optimizaciju vaših proizvodnih procesa",
 	"whatWeDo__title4": "Cetvrti Naslov",
-	"whatWeDo__text4": "AI algorithms are implemented more and more in the field of industrial automation. For instance, the quality control of your production line requires machine vision control systems for the inspection of goods and thus implements machine learning algorithms. With our experiences in AI programming across various applications, we increase productivity and eradicate unnecessary waste, in order to guarantee the optimization of your production processes."
+	"whatWeDo__text4": "AI algoritmi se sve više primenjuju u oblasti industrijske automatizacije. Na primer, kontrola kvaliteta vaše proizvodne linije zahteva sisteme kontrole mašinskog vida za inspekciju robe i na taj način implementira algoritme mašinskog učenja. Sa našim iskustvom u AI programiranju u različitim aplikacijama, povećavamo produktivnost i iskorenjujemo nepotreban otpad, kako bismo garantovali optimizaciju vaših proizvodnih procesa.",
+
+	"projects__title": "Projekti",
+	"projects__description": "proizvodne linije zahteva sisteme kontrole mašinskog vida za inspekciju robe i na taj način implementira algoritme mašinskog učenja. Sa našim iskustvom u AI programiranju u različitim aplikacijama, povećavamo produktivnost i iskorenj:",
+	"projects__text1": "Godina u poslovanju",
+	"projects__text2": "Projekata odradjeno",
+	"projects__text3": "Zadovoljnih klijenata",
+
+	"getInTouch__header": "IZVRSNOST U MAŠINSKOJ PROIZVODNJI",
+	"getInTouch__description": "POBOLJSAJTE SVOJU PROIZVODNJU",
+
+	"contactInfo__header": "Kontakt info",
+	"footer": "Sva prava su rezervisana",
+
+	"popup__header": "KONTAKTIRAJTE NAS",
+	"popup__name": "Ime",
+	"popup__phone": "Telefon",
+	"popup__email": "E-mail",
+	"popup__message": "Poruka",
+	"popup__btn": "POSALJI",
+	"popup__tyMsg": "Hvala Vam na poverenju!"
 }

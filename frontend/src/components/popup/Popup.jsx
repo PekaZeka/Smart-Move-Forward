@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import ReactDom from 'react-dom';
 import axios from 'axios';
 import close from '../../assets/close.png';
@@ -9,6 +10,7 @@ import paperPlane from '../../assets/paperPlane.png';
 import './popup.css';
 
 function Popup({ open, onClose, keepOpen }) {
+	const { t } = useTranslation();
 	const [sent, setSent] = useState(false);
 	const [name, setName] = useState('');
 	const [mail, setMail] = useState('');
@@ -73,7 +75,7 @@ function Popup({ open, onClose, keepOpen }) {
 				<div className="smf__popup-content_form">
 					{!sent ? (
 						<>
-							<h2>SEND US A MESSAGE</h2>
+							<h2>{t('popup__header')}</h2>
 							<form
 								onSubmit={handleSend}
 								className="smf__popup-content_inputs"
@@ -82,7 +84,7 @@ function Popup({ open, onClose, keepOpen }) {
 								<input
 									type="name"
 									name="name"
-									placeholder="Name"
+									placeholder={t('popup__name')}
 									value={name}
 									required="true"
 									onChange={(e) => setName(e.target.value)}
@@ -90,7 +92,7 @@ function Popup({ open, onClose, keepOpen }) {
 								<input
 									type="email"
 									name="email"
-									placeholder="E-mail"
+									placeholder={t('popup__email')}
 									value={mail}
 									required="true"
 									onChange={(e) => setMail(e.target.value)}
@@ -103,12 +105,12 @@ function Popup({ open, onClose, keepOpen }) {
 									}}
 									type="tel"
 									name="phone"
-									placeholder="Phone"
+									placeholder={t('popup__phone')}
 									value={phone}
 									onChange={(e) => setPhone(e.target.value)}
 								/>
 								<textarea
-									placeholder="Message"
+									placeholder={t('popup__message')}
 									name="textarea"
 									value={message}
 									onChange={(e) => setMessage(e.target.value)}
@@ -122,13 +124,13 @@ function Popup({ open, onClose, keepOpen }) {
 										className="smf__popup-paperPlane"
 										alt="paperPlane"
 									/>
-									SEND
+									{t('popup__btn')}
 								</button>
 							</form>
 						</>
 					) : (
 						<h1 className="smf_popup-content_form-sent">
-							Thank you for contacting us!
+							{t('popup__tyMsg')}
 						</h1>
 					)}
 				</div>

@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 import { Slider, Popup, Logo } from '../../components';
 import './header.css';
 
 function Header() {
+	const { t } = useTranslation();
 	const [isOpen, setIsOpen] = useState(false);
 	const [ref, inView] = useInView({
 		threshold: 0.7
@@ -25,7 +27,7 @@ function Header() {
 					type="button"
 					className="smf-button scale-up-center"
 					onClick={() => setIsOpen(true)}>
-					Contact
+					{t('contact__btn')}
 				</button>
 
 				<Popup

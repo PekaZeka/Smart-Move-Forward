@@ -1,8 +1,10 @@
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next';
 import { Time } from '../../components';
 import './footer.css';
 
 function Footer() {
+	const { t } = useTranslation();
 	const { ref, inView } = useInView({
 		threshold: 0.7
 	});
@@ -13,7 +15,7 @@ function Footer() {
 				{' '}
 				© <Time /> Smart Move Forward d.o.o.
 				<br />
-				All Rights Reserved
+				{t('footer')}
 			</h4>
 		</footer>
 	);
