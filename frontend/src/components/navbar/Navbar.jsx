@@ -6,26 +6,15 @@ import lngIcon from '../../assets/language.png';
 import './navbar.css';
 
 function Navbar() {
-	let language = 'EN';
 	const { t, i18n } = useTranslation();
-
 	const handleChangeLng = (lng) => {
 		i18n.changeLanguage(lng);
 		localStorage.setItem('lng', lng);
 	};
-
 	const { ref, inView } = useInView({
 		threshold: 0.3
 	});
 	const [toggleMenu, setToggleMenu] = useState(false);
-
-	const toggleLng = () => {
-		if (language === 'EN') {
-			handleChangeLng('SRB');
-		} else {
-			handleChangeLng('EN');
-		}
-	};
 
 	return (
 		<div
@@ -33,20 +22,23 @@ function Navbar() {
 			className={inView ? 'smf__Navbar fade-in-fast' : 'smf__Navbar'}>
 			<div className="smf__Navbar-containers">
 				<p className="scale-up-center">
-					<a href="#WhatWeDo">Services</a>
+					<a href="#WhatWeDo">{t('navBar__services')}</a>
 				</p>
 				<p className="scale-up-center">
-					<a href="#Projects">Projects</a>
+					<a href="#Projects">{t('navBar__projects')}</a>
 				</p>
 				<p className="scale-up-center">
-					<a href="#Contact">Contact</a>
+					<a href="#Contact">{t('navBar__contact')}</a>
 				</p>
 				<div className="smf__Navbar-language">
-					<a href="#Home">
+					<a href="#Home" onClick={() => handleChangeLng('en')}>
 						<img src={lngIcon} alt="lngIcon" />
 						<p className="scale-up-center">EN</p>
 					</a>
 				</div>
+				<a href="#Home" onClick={() => handleChangeLng('srb')}>
+					<p className="scale-up-center">SRB</p>
+				</a>
 			</div>
 			<div className="smf__Navbar-menu">
 				{toggleMenu ? (
@@ -66,17 +58,22 @@ function Navbar() {
 					<div className="smf__Navbar-menu-container fade-in-fast">
 						<div className="smf__Navbar-menu_container-links">
 							<p className="scale-up-center">
-								<a href="#WhatWeDo">Services</a>
+								<a href="#WhatWeDo">{t('navBar__services')}</a>
 							</p>
 							<p className="scale-up-center">
-								<a href="#Projects">Projects</a>
+								<a href="#Projects">{t('navBar__projects')}</a>
 							</p>
 							<p className="scale-up-center">
-								<a href="#Contact">Contact</a>
+								<a href="#Contact">{t('navBar__contact')}</a>
 							</p>
 							<p className="scale-up-center">
-								<a href="#Home" onClick={() => toggleLng()}>
-									{t("navBar__language")}
+								<a href="#Home" onClick={() => handleChangeLng('en')}>
+									EN
+								</a>
+							</p>
+							<p className="scale-up-center">
+								<a href="#Home" onClick={() => handleChangeLng('srb')}>
+									SRB
 								</a>
 							</p>
 						</div>

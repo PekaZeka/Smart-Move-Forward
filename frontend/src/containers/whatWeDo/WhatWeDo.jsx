@@ -1,9 +1,11 @@
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next';
 import { Feature } from '../../components';
 import { idea, cable, cpu, machine } from './imports';
 import './whatWeDo.css';
 
 function WhatWeDo() {
+	const { t } = useTranslation();
 	const { ref, inView } = useInView({
 		threshold: 0.8
 	});
@@ -17,14 +19,14 @@ function WhatWeDo() {
 						? 'smf__WhatWeDo-container_title slide-in-left'
 						: 'smf__WhatWeDo-container_title slide-out-right'
 				}>
-				<p>EXCELENCE IN MACHINE MANUFACTURING</p>
-				<h1>What We Do</h1>
+				<p>{t('whatWeDo__p')}</p>
+				<h1>{t('whatWeDo__header')}</h1>
 			</div>
 			<div className="smf__WhatWeDo-container_features">
 				<Feature
 					iconURL={cable}
-					title="Control Systems"
-					text="We offer engineering and manufacturing of cost-effective advanced control systems for demanding processes, ranging from chemical industries to particle physics, with on-site installation and final commissioning. A wide variety of PLCs and SCADA packages are available to match your specific needs."
+					title={t('whatWeDo__title1')}
+					text={t('whatWeDo__text1')}
 				/>
 				<Feature
 					iconURL={machine}
