@@ -1,14 +1,31 @@
 import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import lngIcon from '../../assets/language.png';
 import './navbar.css';
 
 function Navbar() {
+	let language = 'EN';
+	const { t, i18n } = useTranslation();
+
+	const handleChangeLng = (lng) => {
+		i18n.changeLanguage(lng);
+		localStorage.setItem('lng', lng);
+	};
+
 	const { ref, inView } = useInView({
 		threshold: 0.3
 	});
 	const [toggleMenu, setToggleMenu] = useState(false);
+
+	const toggleLng = () => {
+		if (language === 'EN') {
+			handleChangeLng('SRB');
+		} else {
+			handleChangeLng('EN');
+		}
+	};
 
 	return (
 		<div
@@ -58,7 +75,9 @@ function Navbar() {
 								<a href="#Contact">Contact</a>
 							</p>
 							<p className="scale-up-center">
-								<a href="#Home">EN</a>
+								<a href="#Home" onClick={() => toggleLng()}>
+									{t("navBar__language")}
+								</a>
 							</p>
 						</div>
 					</div>
