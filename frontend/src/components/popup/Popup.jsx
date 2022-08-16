@@ -19,6 +19,10 @@ function Popup({ open, onClose, keepOpen }) {
 
 	const handleSend = async (event) => {
 		event.preventDefault();
+		setName('');
+		setMail('');
+		setPhone('');
+		setMessage('');
 		setSent(true);
 		try {
 			await axios.post('http://localhost:3001/send_mail', {
@@ -86,7 +90,7 @@ function Popup({ open, onClose, keepOpen }) {
 									name="name"
 									placeholder={t('popup__name')}
 									value={name}
-									required="true"
+									required={true}
 									onChange={(e) => setName(e.target.value)}
 								/>
 								<input
@@ -94,7 +98,7 @@ function Popup({ open, onClose, keepOpen }) {
 									name="email"
 									placeholder={t('popup__email')}
 									value={mail}
-									required="true"
+									required={true}
 									onChange={(e) => setMail(e.target.value)}
 								/>
 								<input
@@ -129,9 +133,7 @@ function Popup({ open, onClose, keepOpen }) {
 							</form>
 						</>
 					) : (
-						<h1 className="smf_popup-content_form-sent">
-							{t('popup__tyMsg')}
-						</h1>
+						<h1 className="smf_popup-content_form-sent">{t('popup__tyMsg')}</h1>
 					)}
 				</div>
 			</div>

@@ -54,6 +54,7 @@ body.active-Popup {
 }
 .smf__popup-closeImg {
 	width: clamp(32px, 2.2vw, 45px);
+	height: clamp(32px, 2.2vw, 45px);
 }
 .smf__popup-content_form {
 	display: flex;
@@ -111,15 +112,15 @@ textarea:focus {
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	width: clamp(7rem, 8vw, 9rem);
-	height: clamp(2.8rem, 2.5vw, 4rem);
+	width: clamp(7rem, 8vw, 8rem);
+	height: clamp(2.8rem, 2.5vw, 3rem);
 	border-radius: 31px;
 	padding: 0 20px;
 	color: #ffffff;
 	background-color: #b80000c2;
 	cursor: pointer;
 	border: none;
-	font-size: 20px;
+	font-size: clamp(14px, 1vw, 20px);
 	font-family: var(--font-family-3);
 	bottom: 0;
 	margin: 1.5rem;

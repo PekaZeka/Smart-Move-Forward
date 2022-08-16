@@ -1,5 +1,6 @@
 img {
 	width: 21px;
+	height: 21px;
 }
 .smf__Navbar-containers_lng {
 	cursor: pointer;
@@ -29,6 +30,7 @@ img {
 }
 .smf__Navbar-containers_languages {
 	display: flex;
+	align-items: center;
 	gap: 6px;
 }
 .smf__Navbar-menu {
