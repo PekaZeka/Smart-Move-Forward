@@ -22,8 +22,8 @@
 .smf__header-title h1 {
 	font-family: var(--font-family-2);
 	font-size: clamp(26px, 4vw, 58px);
-	color: #ffffff;
-	background-color: #b80000c2;
+	color: var(--color-white);
+	background-color: var(--color-red);
 	border-radius: 10rem;
 	padding: 1rem 2.5rem;
 	margin: 3.5rem 0;

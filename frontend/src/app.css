@@ -17,8 +17,7 @@ a {
 	width: 10px;
 }
 ::-webkit-scrollbar-track {
-	background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
-		linear-gradient(to top, #dbdbdb66 0%, #00000040 200%);
+	background: var(--color-gradient);
 	border-radius: 25px;
 }
 ::-webkit-scrollbar-thumb {
@@ -45,7 +44,7 @@ a {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfbfb",endColorstr="#ebedee",GradientType=1);
 }
 .solid__bg {
-	background-color: #ffffff;
+	background-color: var(--color-white);
 }
 .section__padding {
 	padding: 4rem 6rem;

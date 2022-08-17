@@ -31,12 +31,11 @@
 	-webkit-animation: slide-fwd-top 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94)
 		both;
 	animation: slide-fwd-top 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-	background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
-		linear-gradient(to top, #dbdbdb66 0%, #00000040 200%);
+	background: var(--color-gradient);
 	background-blend-mode: multiply;
-	box-shadow: #0000004d 10px 15px 30px, #00000038 0px 15px 12px;
+	box-shadow: var(--boxShadow);
 	border-radius: 2.5rem;
-	color: #ffffff;
+	color: var(--color-white);
 }
 @-webkit-keyframes slide-fwd-top {
 	0% {

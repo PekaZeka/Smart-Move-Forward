@@ -5,11 +5,11 @@
 	z-index: 20;
 }
 .icon-position img {
-	background-color: #b80000b9;
+	background-color: var(--color-red);
 	border-radius: 50%;
 	padding: 14px;
-	height: clamp(3rem,4vw,3.5rem);
-	width: clamp(3rem,4vw,3.5rem);
+	height: clamp(3rem, 4vw, 3.5rem);
+	width: clamp(3rem, 4vw, 3.5rem);
 	cursor: pointer;
 }
 .icon-position img:hover {

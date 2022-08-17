@@ -1,5 +1,5 @@
 .gear1 {
-	fill: #ffffff;
+	fill: var(--color-white);
 	transform-box: fill-box;
 	transform-origin: center;
 	-webkit-animation-timing-function: linear;
@@ -14,7 +14,7 @@
 	animation-play-state: paused;
 }
 .gear2 {
-	fill: #b80000c2;
+	fill: var(--color-red);
 	transform-box: fill-box;
 	transform-origin: center;
 	-webkit-animation-timing-function: linear;

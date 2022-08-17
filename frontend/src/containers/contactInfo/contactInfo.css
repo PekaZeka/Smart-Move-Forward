@@ -25,7 +25,7 @@
 	font-size: clamp(17px, 2vw, 20px);
 }
 .smf__ContactInfo-content p {
-	color: #6b6b6b;
+	color: var(--color-grey);
 }
 .smf__ContactInfo-content a {
 	color: #0070f3;

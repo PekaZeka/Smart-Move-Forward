@@ -20,10 +20,10 @@
 }
 .smf__WhatWeDo-container_title p {
 	font-size: 12px;
-	color: #6b6b6b;
+	color: var(--color-grey);
 	font-weight: 700;
 }
 .smf__WhatWeDo-container_title h1 {
-	font-size: clamp(34px,4vw,44px);
+	font-size: clamp(34px, 4vw, 44px);
 	margin: 1rem 0 2rem 0;
 }

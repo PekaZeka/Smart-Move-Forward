@@ -4,7 +4,7 @@
 	align-items: center;
 	text-align: center;
 	width: 100%;
-	background-color: #ffffff;
+	background-color: var(--color-white);
 	padding: 2rem 0;
 }
 .smf__projects-header {
@@ -20,7 +20,7 @@
 }
 .smf__projects-header p {
 	font-size: clamp(15px, 4vw, 18px);
-	color: #6b6b6b;
+	color: var(--color-grey);
 	font-weight: 700;
 	margin-bottom: 1rem;
 }
