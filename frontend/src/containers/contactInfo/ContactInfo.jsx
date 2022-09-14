@@ -41,7 +41,7 @@ function ContactInfo() {
 				<div className="smf__ContactInfo-content_mail">
 					<img src={mail} alt="mail" />
 					<div>
-						<a href="mailto:smf@info.rs">smf@info.rs</a>
+						<a href="mailto:smf@info.rs">smf.doo@outlook.com</a>
 					</div>
 				</div>
 			</div>

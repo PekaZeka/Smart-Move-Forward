@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT ?? 3001;
 
 app.post('/send_mail', cors(), async (req, res) => {
 	let { name, mail, phone, message } = req.body;

@@ -48,9 +48,6 @@ img {
 	padding: 1.3rem;
 	background: var(--color-gradient);
 }
-.smf__Navbar-menu svg {
-	cursor: pointer;
-}
 
 @media screen and (max-width: 800px) {
 	.smf__Navbar-containers {

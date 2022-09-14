@@ -23,7 +23,7 @@ export default function Slider() {
 		return () => clearInterval(interval);
 	});
 	return (
-		<div className="container-slider">
+		<div className="container-slider smf__slider-overlay">
 			{dataSlider.map((obj, index) => {
 				return (
 					<div

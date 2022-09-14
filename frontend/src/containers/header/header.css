@@ -23,7 +23,7 @@
 	font-family: var(--font-family-2);
 	font-size: clamp(26px, 4vw, 58px);
 	color: var(--color-white);
-	background-color: var(--color-red);
+	background-color: #b10606c4;
 	border-radius: 10rem;
 	padding: 1rem 2.5rem;
 	margin: 3.5rem 0;

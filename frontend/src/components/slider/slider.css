@@ -38,3 +38,7 @@
 .container-dots {
 	position: relative;
 }
+
+.smf__slider-overlay {
+	background-color: #0000003d;
+}
