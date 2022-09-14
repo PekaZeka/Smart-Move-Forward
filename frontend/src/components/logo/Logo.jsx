@@ -17,9 +17,7 @@ function Logo() {
 		<div
 			onMouseEnter={() => changeClassRotate()}
 			onMouseLeave={() => removeChanges()}>
-			<a href="#Home">
-				<LogoSVG gear1={FirstGear} gear2={SecondGear} />
-			</a>
+			<LogoSVG gear1={FirstGear} gear2={SecondGear} />
 		</div>
 	);
 }

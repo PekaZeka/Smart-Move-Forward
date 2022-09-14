@@ -1,4 +1,6 @@
 .gear1 {
+	-webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 	fill: var(--color-white);
 	transform-box: fill-box;
 	transform-origin: center;
@@ -14,6 +16,8 @@
 	animation-play-state: paused;
 }
 .gear2 {
+	-webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
 	fill: var(--color-red);
 	transform-box: fill-box;
 	transform-origin: center;
@@ -29,6 +33,7 @@
 	animation-play-state: paused;
 }
 .txt {
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 	fill: #b80000;
 }
 .rotate-center {

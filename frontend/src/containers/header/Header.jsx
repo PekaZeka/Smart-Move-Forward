@@ -19,6 +19,7 @@ function Header() {
 						? 'smf__header-title fade-in'
 						: 'smf__header-title fade-out-fast'
 				}>
+				<h1 ref={ref}>SMART MOVE FORWARD</h1>
 				<div className="smf__header-logo">
 					<Logo />
 				</div>
@@ -35,8 +36,6 @@ function Header() {
 					onClose={() => setIsOpen(false)}
 					keepOpen={() => setIsOpen(true)}
 				/>
-
-				<h1 ref={ref}>SMART MOVE FORWARD</h1>
 			</div>
 		</header>
 	);
