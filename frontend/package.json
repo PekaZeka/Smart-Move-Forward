@@ -1,6 +1,7 @@
 {
 	"name": "drlajmi_website",
 	"version": "0.1.0",
+	"homepage": "https://PekaZeka.github.io/drljami_website",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.4",
@@ -18,6 +19,8 @@
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
@@ -54,6 +57,7 @@
 		"eslint-plugin-react": "^7.30.1",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"file-loader": "^6.2.0",
+		"gh-pages": "^4.0.0",
 		"prettier": "^2.7.1"
 	}
 }

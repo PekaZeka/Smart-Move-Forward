@@ -49,7 +49,7 @@ img {
 	background: var(--color-gradient);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 	.smf__Navbar-containers {
 		display: none;
 	}
