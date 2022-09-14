@@ -8,7 +8,7 @@ function Header() {
 	const { t } = useTranslation();
 	const [isOpen, setIsOpen] = useState(false);
 	const [ref, inView] = useInView({
-		threshold: 0.7
+		threshold: 1
 	});
 	return (
 		<header className="smf__header" id="Home">
@@ -19,12 +19,13 @@ function Header() {
 						? 'smf__header-title fade-in'
 						: 'smf__header-title fade-out-fast'
 				}>
-				<h1 ref={ref}>SMART MOVE FORWARD</h1>
+				<h1>SMART MOVE FORWARD</h1>
 				<div className="smf__header-logo">
 					<Logo />
 				</div>
 
 				<button
+					ref={ref}
 					type="button"
 					className="smf-button scale-up-center"
 					onClick={() => setIsOpen(true)}>

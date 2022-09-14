@@ -4,7 +4,7 @@ import './feature.css';
 
 function Feature({ iconURL, title, text }) {
 	const { ref, inView } = useInView({
-		threshold: 0.35
+		threshold: 0.4
 	});
 	return (
 		<div
