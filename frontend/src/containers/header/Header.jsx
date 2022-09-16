@@ -23,7 +23,6 @@ function Header() {
 				<div className="smf__header-logo">
 					<Logo />
 				</div>
-
 				<button
 					ref={ref}
 					type="button"

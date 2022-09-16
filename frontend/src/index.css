@@ -19,6 +19,7 @@
 	--color-getintouch: #5873ff;
 	--color-text: #c6cfff;
 	--color-subtext: #ff957342;
+	scrollbar-color: #b80000 #00000040 !important;
 }
 .smf-button {
 	display: inline-block;

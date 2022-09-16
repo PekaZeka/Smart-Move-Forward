@@ -1,7 +1,7 @@
 .smf__ContactInfo {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
+
 	gap: clamp(2rem, 3vw, 5rem);
 	align-items: center;
 	padding: clamp(4rem, 3.5vw, 7rem);
@@ -41,7 +41,7 @@
 	align-items: center;
 	margin-bottom: 2.5rem;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 	.smf__ContactInfo-content h3 {
 		text-align: center;
 	}
@@ -49,7 +49,8 @@
 		margin-bottom: 0;
 	}
 	.smf__ContactInfo {
-		gap: 2.5rem;
-		padding: 0;
+		flex-wrap: wrap;
+		gap: 2rem;
+		padding: 1rem;
 	}
 }
