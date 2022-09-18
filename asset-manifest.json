@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/drljami_website/static/css/main.a874e96b.css",
+    "main.css": "/drljami_website/static/css/main.5e79a8df.css",
     "main.js": "/drljami_website/static/js/main.25c18d4d.js",
     "index.html": "/drljami_website/index.html",
-    "main.a874e96b.css.map": "/drljami_website/static/css/main.a874e96b.css.map",
+    "main.5e79a8df.css.map": "/drljami_website/static/css/main.5e79a8df.css.map",
     "main.25c18d4d.js.map": "/drljami_website/static/js/main.25c18d4d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a874e96b.css",
+    "static/css/main.5e79a8df.css",
     "static/js/main.25c18d4d.js"
   ]
 }
