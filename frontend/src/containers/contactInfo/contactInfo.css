@@ -1,10 +1,9 @@
 .smf__ContactInfo {
 	display: flex;
 	justify-content: center;
-
-	gap: clamp(2rem, 3vw, 5rem);
+	gap: 5rem;
 	align-items: center;
-	padding: clamp(4rem, 3.5vw, 7rem);
+	padding: 7rem;
 }
 .smf__ContactInfo-content {
 	display: flex;
@@ -22,7 +21,7 @@
 }
 .smf__ContactInfo-content p,
 .smf__ContactInfo-content a {
-	font-size: clamp(17px, 2vw, 20px);
+	font-size: 20px;
 }
 .smf__ContactInfo-content p {
 	color: var(--color-grey);
@@ -41,16 +40,33 @@
 	align-items: center;
 	margin-bottom: 2.5rem;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-device-width: 1080px) {
+	.smf__ContactInfo {
+		gap: 2rem;
+		flex-direction: column;
+		padding: 4.5rem;
+	}
 	.smf__ContactInfo-content h3 {
+		font-size: 36px;
 		text-align: center;
 	}
-	.smf__ContactInfo-content_mail {
-		margin-bottom: 0;
+	.smf__ContactInfo-content p,
+	.smf__ContactInfo-content a {
+		font-size: 22px;
 	}
+}
+@media screen and (max-device-width: 480px) {
 	.smf__ContactInfo {
-		flex-wrap: wrap;
 		gap: 2rem;
-		padding: 1rem;
+		flex-direction: column;
+		padding: 4.5rem;
+	}
+	.smf__ContactInfo-content h3 {
+		font-size: 50px;
+		text-align: center;
+	}
+	.smf__ContactInfo-content p,
+	.smf__ContactInfo-content a {
+		font-size: 38px;
 	}
 }

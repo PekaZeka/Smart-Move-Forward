@@ -30,8 +30,13 @@
 	background-color: #ffffff;
 	color: #494949;
 	font-weight: 700;
-	font-size: clamp(19px, 3vw, 25px);
+	font-size: 25px;
 	box-shadow: 0 4px 14px 0 #5a5a5a83;
+}
+@media screen and (max-device-width: 480px) {
+	.smf-button {
+		font-size: 42px;
+	}
 }
 .slide-in-left {
 	-webkit-animation: slide-in-left 0.75s ease-out both;

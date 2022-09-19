@@ -24,6 +24,14 @@
 	font-weight: 700;
 }
 .smf__WhatWeDo-container_title h1 {
-	font-size: clamp(34px, 4vw, 44px);
+	font-size: 44px;
 	margin: 1rem 0 2rem 0;
+}
+@media screen and (max-device-width: 480px) {
+	.smf__WhatWeDo-container_title p {
+		font-size: 18px;
+	}
+	.smf__WhatWeDo-container_title h1 {
+		font-size: 50px;
+	}
 }

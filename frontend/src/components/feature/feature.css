@@ -25,7 +25,7 @@
 	font-size: 28px;
 }
 .smf__Feature-content p {
-	font-size: 20px;
+	font-size: 23px;
 }
 .smf__Feature:hover {
 	-webkit-animation: slide-fwd-top 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94)
@@ -57,39 +57,26 @@
 		transform: translateZ(100px) translateY(-15px);
 	}
 }
-
-@media screen and (max-width: 1650px) {
-	.smf__Feature {
-		width: 32rem;
-		height: 27.5rem;
-		padding: 2rem;
-		display: block;
-		flex-direction: column;
-		margin: 2rem;
-	}
-}
-@media screen and (max-width: 1240px) {
-	.smf__Feature {
-		width: 26.5rem;
-		height: 31rem;
-		padding: 2rem;
-		display: block;
-		flex-direction: column;
-		margin: 1rem;
-	}
-}
-@media screen and (max-width: 984px) {
+@media screen and (max-device-width: 1632px) {
 	.smf__Feature {
 		height: fit-content;
+		padding: 2rem;
+		margin: 1rem 2rem;
 	}
 }
-@media screen and (max-width: 505px) {
-	.smf__Feature {
-		width: 18rem;
-		height: fit-content;
-		padding: 2rem 1rem;
-		display: block;
-		flex-direction: column;
-		margin: 1rem;
+@media screen and (max-device-width: 1200px) {
+	.smf__Feature-header h1 {
+		font-size: 26px;
+	}
+	.smf__Feature-content p {
+		font-size: 22px;
+	}
+}
+@media screen and (max-device-width: 480px) {
+	.smf__Feature-header h1 {
+		font-size: 32px;
+	}
+	.smf__Feature-content p {
+		font-size: 25px;
 	}
 }

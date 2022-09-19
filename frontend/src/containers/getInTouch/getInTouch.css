@@ -4,7 +4,6 @@
 	justify-content: center;
 	align-items: center;
 	padding: 2rem 0;
-	margin-bottom: 2rem;
 	opacity: 0;
 	color: var(--color-white);
 }
@@ -13,7 +12,7 @@
 	background-blend-mode: multiply;
 }
 .smf__GetInTouch-logo {
-	width: 150px;
+	width: 9rem;
 	margin: 2rem 0;
 }
 .smf__GetInTouch-logoParagraph_top {
@@ -22,4 +21,15 @@
 .smf__GetInTouch-logoParagraph_bot {
 	font-size: 20px;
 	margin-bottom: 2rem;
+}
+@media screen and (max-device-width: 480px) {
+	.smf__GetInTouch-logoParagraph_top {
+		font-size: 20px;
+	}
+	.smf__GetInTouch-logo {
+		width: 12rem;
+	}
+	.smf__GetInTouch-logoParagraph_bot {
+		font-size: 30px;
+	}
 }

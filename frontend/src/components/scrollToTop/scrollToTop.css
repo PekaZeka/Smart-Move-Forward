@@ -8,8 +8,8 @@
 	background-color: var(--color-red);
 	border-radius: 50%;
 	padding: 14px;
-	height: clamp(3rem, 4vw, 3.5rem);
-	width: clamp(3rem, 4vw, 3.5rem);
+	height: 3.5rem;
+	width: 3.5rem;
 	cursor: pointer;
 }
 .icon-position img:hover {

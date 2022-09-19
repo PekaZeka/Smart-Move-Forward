@@ -42,3 +42,13 @@
 .smf__slider-overlay {
 	background-color: #0000003d;
 }
+@media screen and (max-device-width: 1080px) {
+	.container-slider {
+		min-height: 60vh;
+	}
+}
+@media screen and (max-device-width: 320px) {
+	.container-slider {
+		min-height: 40vh;
+	}
+}

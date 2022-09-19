@@ -52,13 +52,13 @@ function Navbar() {
 				{toggleMenu ? (
 					<RiCloseLine
 						color="#fff"
-						size={27}
+						size={64}
 						onClick={() => setToggleMenu(false)}
 					/>
 				) : (
 					<RiMenuLine
 						color="#fff"
-						size={27}
+						size={64}
 						onClick={() => setToggleMenu(true)}
 					/>
 				)}

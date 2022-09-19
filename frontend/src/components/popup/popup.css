@@ -24,7 +24,7 @@ body.active-Popup {
 	justify-content: space-evenly;
 	align-items: center;
 	position: fixed;
-	width: clamp(300px, 55vw, 70vw);
+	width: 55vw;
 	height: fit-content;
 	padding: 5.3rem 0;
 	top: 50%;
@@ -38,7 +38,7 @@ body.active-Popup {
 	text-align: center;
 	color: #272727;
 	font-weight: 600;
-	font-size: clamp(22.3px, 4vw, 32px);
+	font-size: 32px;
 	padding-bottom: 2.5rem;
 	font-family: var(--font-family-3);
 }
@@ -53,8 +53,8 @@ body.active-Popup {
 	cursor: pointer;
 }
 .smf__popup-closeImg {
-	width: clamp(32px, 2.2vw, 45px);
-	height: clamp(32px, 2.2vw, 45px);
+	width: 45px;
+	height: 45px;
 }
 .smf__popup-content_form {
 	display: flex;
@@ -67,7 +67,7 @@ body.active-Popup {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	width: clamp(260px, 38vw, 40vw);
+	width: 40vw;
 }
 .smf__popup-content_inputs input:focus,
 textarea:focus {
@@ -76,7 +76,7 @@ textarea:focus {
 }
 .smf__popup-content_inputs input,
 .smf__popup-content_inputs textarea {
-	height: clamp(2rem, 5vh, 4rem);
+	height: 4rem;
 	width: 100%;
 	line-height: 1.2;
 	border-radius: 31px;
@@ -85,7 +85,7 @@ textarea:focus {
 	border: none;
 	background-color: var(--color-white);
 	color: #63636e;
-	font-size: 16.2px;
+	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
 	font-family: var(--font-family-3);
@@ -96,7 +96,7 @@ textarea:focus {
 }
 .smf__popup-content_inputs textarea {
 	text-align: start;
-	height: clamp(8rem, 20vh, 20rem);
+	height: 20rem;
 	cursor: auto;
 	resize: none;
 }
@@ -112,18 +112,18 @@ textarea:focus {
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	width: clamp(7rem, 8vw, 8rem);
-	height: clamp(2.8rem, 2.5vw, 3rem);
+	width: 8rem;
+	height: 3rem;
 	border-radius: 31px;
-	padding: 0 20px;
+	padding: 1rem 5rem;
 	color: var(--color-white);
 	background-color: var(--color-red);
 	cursor: pointer;
 	border: none;
-	font-size: clamp(14px, 1vw, 20px);
+	font-size: 20px;
 	font-family: var(--font-family-3);
-	bottom: 0;
-	margin: 1.5rem;
+	bottom: 2%;
+	margin: auto;
 }
 .smf__popup-sendBtn:hover {
 	transition: 0.3s ease-out;
@@ -131,4 +131,36 @@ textarea:focus {
 }
 .smf__popup-paperPlane {
 	width: 1.1rem;
+}
+@media screen and (max-device-width: 480px) {
+	.smf__popup-content {
+		width: 80vw;
+		height: fit-content;
+	}
+	.smf__popup-content_inputs {
+		width: 65vw;
+	}
+	.smf__popup-content_inputs input {
+		height: 6.5rem;
+		font-size: 26px;
+	}
+	.smf__popup-content_inputs textarea {
+		height: 32rem;
+		margin-bottom: 3rem;
+		font-size: 26px;
+	}
+	.smf__popup-sendBtn {
+		padding: 2.5rem 9rem;
+		font-size: 28px;
+	}
+	.smf__popup-paperPlane {
+		width: 1.6rem;
+	}
+	.smf__popup-closeImg {
+		width: 60px;
+		height: 60px;
+	}
+	.smf__popup-content h2 {
+		font-size: 40px;
+	}
 }

@@ -42,21 +42,31 @@ img {
 	flex-direction: column;
 	position: absolute;
 	min-width: fit-content;
-	top: 2.2rem;
+	min-height: fit-content;
+	top: 4.6rem;
 	line-height: 2rem;
 	border-radius: 10px;
 	padding: 1.3rem;
 	background: var(--color-gradient);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-device-width: 480px) {
+	.smf__Navbar {
+		font-size: 30px;
+	}
+}
+@media screen and (max-device-width: 320px) {
 	.smf__Navbar-containers {
 		display: none;
 	}
 	.smf__Navbar {
 		justify-content: flex-start;
+		font-size: 50px;
 	}
 	.smf__Navbar-menu {
 		display: flex;
+	}
+	.smf__Navbar-menu-container {
+		line-height: 4rem;
 	}
 }

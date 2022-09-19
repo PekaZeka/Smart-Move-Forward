@@ -3,9 +3,14 @@
 	box-shadow: var(--boxShadow);
 	height: 25rem;
 	margin-bottom: 2.5rem;
-	width: clamp(90%, 72vw, 100%);
+	width: 100%;
 }
 .smf__Map iframe {
 	position: relative;
 	width: 100%;
+}
+@media screen and (max-device-width: 1080px) {
+	.smf__Map {
+		height: 33rem;
+	}
 }
