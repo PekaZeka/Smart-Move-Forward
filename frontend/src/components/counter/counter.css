@@ -28,3 +28,17 @@
 		font-size: 32px;
 	}
 }
+@media screen and (orientation:landscape) and (max-device-width: 1600px){
+	.smf__counter {
+		width: 6.5rem;
+		height: 6.5rem;
+		font-size: 16px;
+	}
+}
+@media screen and (orientation:landscape) and (max-device-width: 720px){
+	.smf__counter {
+		width: 8rem;
+		height: 8rem;
+		font-size: 18px;
+	}
+}

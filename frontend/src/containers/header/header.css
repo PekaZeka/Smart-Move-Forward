@@ -68,3 +68,21 @@
 		margin: 3rem 0 5rem 0;
 	}
 }
+@media screen and (orientation: landscape) and (max-device-width: 1600px) {
+	.smf__header-title h1 {
+		font-size: 45px;
+	}
+	.smf__header-logo {
+		width: 8rem;
+		margin: 0 0 2rem 0;
+	}
+}
+@media screen and (orientation: landscape) and (max-device-width: 720px) {
+	.smf__header-title h1 {
+		font-size: 60px;
+	}
+	.smf__header-logo {
+		width: 10rem;
+		margin: 1rem 0 2rem 0;
+	}
+}

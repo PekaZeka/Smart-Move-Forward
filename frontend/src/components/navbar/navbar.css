@@ -70,3 +70,13 @@ img {
 		line-height: 4rem;
 	}
 }
+@media screen and (orientation: landscape) and (max-device-width: 720px) {
+	.smf__Navbar {
+		font-size: 23px;
+	}
+}
+@media screen and (orientation: landscape) and (max-device-width: 480px) {
+	.smf__Navbar {
+		font-size: 26px;
+	}
+}

@@ -77,6 +77,14 @@
 		font-size: 32px;
 	}
 	.smf__Feature-content p {
-		font-size: 25px;
+		font-size: 26px;
+	}
+}
+@media screen and (orientation:landscape) and (max-device-width: 1600px){
+	.smf__Feature-header h1 {
+		font-size: 22px;
+	}
+	.smf__Feature-content p {
+		font-size: 20px;
 	}
 }

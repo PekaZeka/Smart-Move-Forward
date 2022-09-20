@@ -40,7 +40,7 @@
 	align-items: center;
 	margin-bottom: 2.5rem;
 }
-@media screen and (max-device-width: 1080px) {
+@media screen and (orientation:portrait) and (max-device-width: 1080px) {
 	.smf__ContactInfo {
 		gap: 2rem;
 		flex-direction: column;
@@ -55,7 +55,7 @@
 		font-size: 22px;
 	}
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (orientation:portrait) and (max-device-width: 480px) {
 	.smf__ContactInfo {
 		gap: 2rem;
 		flex-direction: column;
@@ -70,3 +70,19 @@
 		font-size: 38px;
 	}
 }
+@media screen and (orientation:landscape) and (max-device-width: 1600px){
+	.smf__ContactInfo {
+		gap: 1rem;
+		
+		padding: 4rem;
+	}
+	.smf__ContactInfo-content h3 {
+		font-size: 25px;
+		text-align: center;
+	}
+	.smf__ContactInfo-content p,
+	.smf__ContactInfo-content a {
+		font-size: 20px;
+	}
+}
+

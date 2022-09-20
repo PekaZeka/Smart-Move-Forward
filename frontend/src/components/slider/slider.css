@@ -42,13 +42,18 @@
 .smf__slider-overlay {
 	background-color: #0000003d;
 }
-@media screen and (max-device-width: 1080px) {
+@media screen and (orientation: portrait) and (max-device-width: 1080px) {
 	.container-slider {
 		min-height: 60vh;
 	}
 }
-@media screen and (max-device-width: 320px) {
+@media screen and (orientation: portrait) and (max-device-width: 320px) {
 	.container-slider {
 		min-height: 40vh;
+	}
+}
+@media screen and (orientation: landscape) and (max-device-width: 1600px) {
+	.container-dots {
+		display: none;
 	}
 }

@@ -9,8 +9,13 @@
 	position: relative;
 	width: 100%;
 }
-@media screen and (max-device-width: 1080px) {
+@media screen and (orientation: portrait) and (max-device-width: 1080px) {
 	.smf__Map {
 		height: 33rem;
+	}
+}
+@media screen and (orientation: landscape) and (max-device-width: 1600px) {
+	.smf__Map {
+		height: 22rem;
 	}
 }
