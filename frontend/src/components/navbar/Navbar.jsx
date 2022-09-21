@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from 'react';
-import { useInView } from 'react-intersection-observer';
 import { useTranslation } from 'react-i18next';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import lngIcon from '../../assets/language.png';
@@ -23,14 +22,9 @@ function Navbar() {
 		i18n.changeLanguage(lng);
 		localStorage.setItem('lng', lng);
 	};
-	const { ref, inView } = useInView({
-		threshold: 0.3
-	});
 
 	return (
-		<div
-			ref={ref}
-			className={inView ? 'smf__Navbar fade-in-fast' : 'smf__Navbar'}>
+		<div className="smf__Navbar">
 			<div className="smf__Navbar-containers">
 				<p className="scale-up-center">
 					<a href="#WhatWeDo">{t('navBar__services')}</a>

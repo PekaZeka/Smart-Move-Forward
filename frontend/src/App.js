@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
-import { ScrollToTop, Navbar } from './components';
+import { ScrollToTop } from './components';
 import {
 	ContactInfo,
 	Projects,
@@ -13,7 +13,6 @@ import './app.css';
 function App() {
 	return (
 		<div>
-			<Navbar />
 			<Header />
 			<div className="gradient__bg">
 				<WhatWeDo />

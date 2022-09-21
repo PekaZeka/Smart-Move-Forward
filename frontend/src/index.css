@@ -118,6 +118,7 @@
 		opacity: 1;
 	}
 }
+
 .fade-out-fast {
 	-webkit-animation: fade-out 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 	animation: fade-out 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -161,5 +162,19 @@
 	100% {
 		-webkit-transform: scale(1.1);
 		transform: scale(1.1);
+	}
+}
+@media screen and (orientation: landscape) and (max-device-width: 1080px) {
+	.smf__header-title,
+	.smf__GetInTouch {
+		opacity: 1;
+	}
+	.fade-in {
+		-webkit-animation: none;
+		animation: none;
+	}
+	.fade-out-fast {
+		-webkit-animation: none;
+		animation: none;
 	}
 }

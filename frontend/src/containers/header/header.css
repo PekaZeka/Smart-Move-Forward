@@ -70,19 +70,19 @@
 }
 @media screen and (orientation: landscape) and (max-device-width: 1600px) {
 	.smf__header-title h1 {
-		font-size: 45px;
+		font-size: 42px;
 	}
 	.smf__header-logo {
-		width: 8rem;
+		width: 7rem;
 		margin: 0 0 2rem 0;
 	}
 }
 @media screen and (orientation: landscape) and (max-device-width: 720px) {
 	.smf__header-title h1 {
-		font-size: 60px;
+		font-size: 55px;
 	}
 	.smf__header-logo {
-		width: 10rem;
+		width: 8rem;
 		margin: 1rem 0 2rem 0;
 	}
 }

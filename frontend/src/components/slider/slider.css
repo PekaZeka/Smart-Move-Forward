@@ -9,7 +9,7 @@
 }
 .slide {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	position: fixed;
 	z-index: -1;
 	opacity: 0;
@@ -17,7 +17,7 @@
 }
 .slide img {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	object-fit: cover;
 }
 .active-anim {
@@ -53,6 +53,9 @@
 	}
 }
 @media screen and (orientation: landscape) and (max-device-width: 1600px) {
+	.container-slider {
+		min-height: 95vh;
+	}
 	.container-dots {
 		display: none;
 	}

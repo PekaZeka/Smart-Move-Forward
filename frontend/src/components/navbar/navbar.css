@@ -1,4 +1,4 @@
-img {
+.smf__Navbar-containers_languages img {
 	width: 21px;
 	height: 21px;
 }
@@ -12,12 +12,12 @@ img {
 	width: 100%;
 	font-size: 18px;
 	font-weight: 500;
-	opacity: 0;
 	background: var(--color-gradient);
 	background-blend-mode: multiply;
 	color: var(--color-white);
 	box-shadow: var(--boxShadow);
 	position: absolute;
+	top: 0;
 	z-index: 99;
 }
 .smf__Navbar-containers {

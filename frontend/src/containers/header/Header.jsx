@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
-import { Slider, Popup, Logo } from '../../components';
+import { Slider, Popup, Logo, Navbar } from '../../components';
 import './header.css';
 
 function Header() {
@@ -12,6 +12,7 @@ function Header() {
 	});
 	return (
 		<header className="smf__header" id="Home">
+			<Navbar />
 			<Slider />
 			<div
 				className={
