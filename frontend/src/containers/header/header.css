@@ -1,8 +1,8 @@
 .smf__header {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 }
 .smf__header-logo {
 	width: 9rem;
@@ -14,9 +14,12 @@
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
-	opacity: 0;
+	transition: opacity 0.5s ease-in;
 }
-.smf__navbar {
+.fadeIn {
+	opacity: 1;
+}
+.fadeOut {
 	opacity: 0;
 }
 .smf__header-title h1 {
@@ -74,7 +77,7 @@
 	}
 	.smf__header-logo {
 		width: 7rem;
-		margin: 0 0 2rem 0;
+		margin-bottom: 2rem;
 	}
 }
 @media screen and (orientation: landscape) and (max-device-width: 720px) {
@@ -83,6 +86,7 @@
 	}
 	.smf__header-logo {
 		width: 8rem;
-		margin: 1rem 0 2rem 0;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
 	}
 }

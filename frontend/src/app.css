@@ -8,6 +8,9 @@
 body {
 	overflow-x: hidden;
 	background-color: #353535;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: 100%;
 }
 a {
 	color: unset;

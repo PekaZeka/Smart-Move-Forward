@@ -16,9 +16,7 @@ function Header() {
 			<Slider />
 			<div
 				className={
-					inView
-						? 'smf__header-title fade-in'
-						: 'smf__header-title fade-out-fast'
+					inView ? 'smf__header-title fadeIn' : 'smf__header-title fadeOut'
 				}>
 				<h1>SMART MOVE FORWARD</h1>
 				<div className="smf__header-logo">

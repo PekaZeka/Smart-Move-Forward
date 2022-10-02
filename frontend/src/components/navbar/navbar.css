@@ -52,7 +52,11 @@
 
 @media screen and (max-device-width: 480px) {
 	.smf__Navbar {
-		font-size: 30px;
+		font-size: 35px;
+	}
+	.smf__Navbar-containers_languages img {
+		width: 28px;
+		height: 28px;
 	}
 }
 @media screen and (max-device-width: 320px) {
@@ -61,7 +65,7 @@
 	}
 	.smf__Navbar {
 		justify-content: flex-start;
-		font-size: 50px;
+		font-size: 58px;
 	}
 	.smf__Navbar-menu {
 		display: flex;
@@ -69,14 +73,18 @@
 	.smf__Navbar-menu-container {
 		line-height: 4rem;
 	}
+	.smf__Navbar-containers_languages img {
+		width: 28px;
+		height: 28px;
+	}
 }
 @media screen and (orientation: landscape) and (max-device-width: 720px) {
 	.smf__Navbar {
-		font-size: 23px;
+		font-size: 28px;
 	}
 }
 @media screen and (orientation: landscape) and (max-device-width: 480px) {
 	.smf__Navbar {
-		font-size: 26px;
+		font-size: 32px;
 	}
 }

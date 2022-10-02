@@ -20,14 +20,20 @@ function LogoSVG({ gear1, gear2 }) {
 						<path
 							className="txt"
 							d="m130.8 101.3-2.6-2.6v-5.2h5.2v2.6h13v-5.2h-15.7l-2.6-1.9V77.8l2.6-2.7H149l2.6 2.7V83h-5.2v-2.6h-13v5.2h15.7l2.6 2.6v10.5l-2.6 2.6h-18.3z"
+							stroke="#b80000"
+							stroke-width="1.4"
 						/>
 						<path
 							className="txt"
 							d="M155.4 101.3V75.1h5.2l9.1 12.7 9.3-12.7h5v26.1h-5.2V83.7l-6.8 10h-4.4l-7-10v17.6h-5.2z"
+							stroke="#b80000"
+							stroke-width="1.4"
 						/>
 						<path
 							className="txt"
 							d="M187.8 101.3V75.1H210v5.2h-17v5.3h15.7v5.2H193v10.4h-5.2z"
+							stroke="#b80000"
+							stroke-width="1.4"
 						/>
 					</g>
 				</g>
