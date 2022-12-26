@@ -40,10 +40,7 @@
 	-webkit-animation-play-state: running;
 	animation-play-state: running;
 }
-.rotate-center-reverse {
-	-webkit-animation-play-state: running;
-	animation-play-state: running;
-}
+
 @-webkit-keyframes rotate-center {
 	0% {
 		-webkit-transform: rotate(0);

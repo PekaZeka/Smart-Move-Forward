@@ -25,7 +25,7 @@ function Popup({ open, onClose, keepOpen }) {
 		setMessage('');
 		setSent(true);
 		try {
-			await axios.post('http://localhost:3001/send_mail', {
+			await axios.post('http://localhost:3001', {
 				name,
 				mail,
 				phone,
