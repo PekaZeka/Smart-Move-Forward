@@ -23,8 +23,8 @@ app.post('/', (req, res) => {
 	const { name, phone, mail, message } = req.body;
 	transporter.sendMail(
 		{
-			from: 'locketman5@outlook.com',
-			to: 'dalibor.n.jaksic@gmail.com',
+			from: 'smf@hotmail.com',
+			to: 'smf@hotmail.com',
 			subject: 'Contact from portfolio website',
 			text: `NAME: ${name}\nPHONE: ${phone}\nEMAIL: ${mail}\nMESSAGE: ${message}`
 		},
