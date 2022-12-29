@@ -1,6 +1,10 @@
-# Welcome to Smart Move Forward
+<h1 align="center">
+Welcome to Smart Move Forward
+</h1>
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/25554171/209997189-e61802e3-dd49-46b6-8fda-90fab8e4bd55.jpg" alt="SMF" width="500">
+</p>
 
 This website was built using **React.js**, **Node.js**, **HTML** and **CSS**.
 
